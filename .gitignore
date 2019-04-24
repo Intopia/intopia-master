@@ -1,5 +1,6 @@
-# Object file
-*.o
+# Codekit
+*.codekit3
 
-# Ada Library Information
-*.ali
+# Sublime
+*.sublime-project
+*.sublime-workspace

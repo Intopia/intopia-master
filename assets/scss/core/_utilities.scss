@@ -1,0 +1,147 @@
+// color utilities
+
+.c-black             { color: $black; }
+.c-white             { color: $white; }
+.c-red               { color: $red; }
+.c-green             { color: $green; }
+.c-primary-color     { color: $primary-color; }
+.c-secondary-color   { color: $secondary-color; }
+.c-gray55            { color: $gray55; }
+.c-gray60            { color: $gray60; }
+.c-gray65            { color: $gray65; }
+.c-gray70            { color: $gray70; }
+.c-gray75            { color: $gray75; }
+.c-gray80            { color: $gray80; }
+.c-gray85            { color: $gray85; }
+.c-gray90            { color: $gray90; }
+
+
+// background utilities
+
+.bg-black            { background-color: $black; }
+.bg-white            { background-color: $white; }
+.bg-red              { background-color: $red; }
+.bg-green            { background-color: $green; }
+.bg-primary-color    { background-color: $primary-color; }
+.bg-secondary-color  { background-color: $secondary-color; }
+.bg-gray5            { background-color: $gray5 ; }
+.bg-gray10           { background-color: $gray10; }
+.bg-gray15           { background-color: $gray15; }
+.bg-gray20           { background-color: $gray20; }
+.bg-gray25           { background-color: $gray25; }
+.bg-gray30           { background-color: $gray30; }
+.bg-gray35           { background-color: $gray35; }
+.bg-gray40           { background-color: $gray40; }
+.bg-gray45           { background-color: $gray45; }
+.bg-gray50           { background-color: $gray50; }
+.bg-gray55           { background-color: $gray55; }
+.bg-gray60           { background-color: $gray60; }
+.bg-gray65           { background-color: $gray65; }
+.bg-gray70           { background-color: $gray70; }
+.bg-gray75           { background-color: $gray75; }
+.bg-gray80           { background-color: $gray80; }
+.bg-gray85           { background-color: $gray85; }
+.bg-gray90           { background-color: $gray90; }
+
+// font utilities
+
+.font36              { font-size: $font36; }
+.font34              { font-size: $font34; }
+.font32              { font-size: $font32; }
+.font30              { font-size: $font30; }
+.font28              { font-size: $font28; }
+.font26              { font-size: $font26; }
+.font24              { font-size: $font24; }
+.font22              { font-size: $font22; }
+.font20              { font-size: $font20; }
+.font18              { font-size: $font18; }
+.font16              { font-size: $font16; }
+.font14              { font-size: $font14; }
+.font12              { font-size: $font12; }
+.font10              { font-size: $font10; }
+
+
+// hidden-text
+
+%hidden,
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  width: 1px;
+  height: 1px;
+  border: 0;
+  margin: -1px;
+  padding: 0;
+}
+
+
+// error
+
+.message-error,
+.message-error-radio-group {
+  display: block;
+  margin: .25em 0 0;
+  color: $red;
+  font-size: $font14;
+  font-style: italic;
+}
+
+.message-error-radio-group {
+  margin: 1em 0 0;
+}
+
+.message-hint,
+.message-hint-radio-group {
+  display: block;
+  margin: .25em 0 0;
+  color: $gray65;
+  font-size: $font14;
+  font-style: italic;
+}
+
+.message-hint-radio-group {
+  margin: 1em 0 0;
+}
+
+.message-required {
+  display: inline-block;
+  margin-left: .3em;
+  color: $red;
+  font-size: $font14;
+  font-weight: normal;
+}
+
+
+// text-align
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+// pass-fail
+
+.pass,
+.fail {
+  border-radius: .5rem;
+  padding: .1rem .5rem .2rem;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.pass {
+  background: $green;
+}
+
+.fail {
+  background: $red;
+}

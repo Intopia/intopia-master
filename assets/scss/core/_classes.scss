@@ -1,0 +1,304 @@
+// example
+
+.example {
+  border: 1px solid $base-border-color;
+  margin: 1rem 0;
+  padding: 1rem;
+
+  p {
+    margin-top: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+// input, textarea, select styles
+
+.input,
+.textarea,
+.select {
+  margin-bottom: 1.5rem;
+}
+
+.input__label,
+.textarea__label,
+.select__label {
+  display: block;
+  margin: 0 0 .2rem;
+}
+
+.input__control,
+.select__control {
+  display: block;
+  width: 100%;
+  height: 2.2rem;
+  border: 2px solid $base-border-color;
+  border-radius: .3rem;
+  padding: 0 .5rem;
+  color: $gray80;
+  background-color: $white;
+  font-size: 1rem;
+  line-height: 2.2rem;
+}
+
+.textarea__control {
+  display: block;
+  width: 100%;
+  height: 6rem;
+  border: 2px solid $base-border-color;
+  border-radius: .3rem;
+  padding: .5rem;
+  color: $gray80;
+  background-color: $white;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.input__control:focus,
+.textarea__control:focus,
+.select__control:focus {
+  border: 1px solid $black;
+  outline: 2px dotted $black;
+}
+
+.input-error .input__control,
+.textarea-error .textarea__control,
+.select-error .select__control {
+  border: 2px solid $red;
+}
+
+
+// radiogroup
+
+.radiogroup {
+  border: 0;
+  margin: 0 0 1.5rem;
+  padding: 0;
+}
+
+.radiogroup__legend {
+  margin: 0 0 .5rem;
+  font-weight: bold;
+}
+
+.radiogroup__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.radiogroup__control {
+  position: relative;
+  top: -1px;
+  left: 0;
+}
+
+.radiogroup__label {
+  display: inline-block;
+  margin: 0 0 0 .1em;
+}
+
+
+// checkbox
+
+.checkbox {
+  margin: 0 0 1.5rem;
+}
+
+.checkbox__control {
+  position: relative;
+  top: -1px;
+  left: 0;
+}
+
+.checkbox__label {
+  display: inline-block;
+  margin: 0 0 0 .1em;
+}
+
+
+// button-primary
+
+.button-primary,
+.button-secondary {
+  height: 2.5rem;
+  border-radius: 2.2rem;
+  padding: 0 1rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+.button-primary {
+  border: 2px solid $link-color;
+  color: $white;
+  background: $link-color;
+}
+
+.button-secondary {
+  border: 2px solid $base-border-color;
+  color: $link-color;
+  background: $white;
+}
+
+.button-primary:focus,
+.button-secondary:focus {
+  border: 2px solid $black;
+  outline: 2px dotted $black;
+  color: $white;
+  background: $black;
+}
+
+.button-primary:hover,
+.button-secondary:hover {
+  border: 2px solid $link-color-hover;
+  color: $white;
+  background: $link-color-hover;
+}
+
+.button-primary:active,
+.button-secondary:active {
+  border: 1px solid $link-color-active;
+  color: $white;
+  background: $link-color-active;
+}
+
+
+// link buttons
+
+.link-primary,
+.link-secondary {
+  display: inline-block;
+  height: 2.5rem;
+  border-radius: 2.2rem;
+  padding: 0 1rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  text-decoration: none;
+}
+
+.link-primary {
+  border: 2px solid $link-color;
+  color: $white !important;
+  background: $link-color;
+}
+
+.link-secondary {
+  border: 2px solid $base-border-color;
+  color: $link-color;
+  background: $white;
+}
+
+.link-primary:focus,
+.link-secondary:focus {
+  border: 2px solid $black;
+  outline: 2px dotted $black;
+  color: $white;
+  background: $black;
+}
+
+.link-primary:hover,
+.link-secondary:hover {
+  border: 2px solid $link-color-hover;
+  color: $white;
+  background: $link-color-hover;
+}
+
+.link-primary:active,
+.link-secondary:active {
+  border: 1px solid $link-color-active;
+  color: $white;
+  background: $link-color-active;
+}
+
+
+// header
+
+.header {
+  padding: 1rem 0;
+  background: $white;
+}
+
+.header__logo {
+  margin: 0;
+}
+
+
+// banner
+
+.banner {
+  margin: 0 0 2rem;
+  padding: 3rem 0;
+  background: $secondary-color;
+
+  h2 {
+    margin: 0;
+    color: $white;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: $screen-xs-max) and (max-width: $screen-sm-max) {
+  .banner {
+    padding: 2rem 0;
+  }
+}
+
+
+// menu
+
+.menu {
+  border-top: 1px solid $gray15;
+  margin: 0 0 2rem;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline;
+  }
+
+  a {
+    display: block;
+    border-bottom: 1px solid $gray15;
+    padding: .4rem .2rem;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background: $gray10;
+  }
+
+  .menu__external {
+    font-weight: bold;
+  }
+}
+
+
+// skip link
+
+.skip-link a {
+  position: absolute;
+  z-index: 2;
+  left: -1000px;
+  padding: .5em;
+  color: $white;
+  background: $black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.skip-link a:active,
+.skip-link a:focus,
+.skip-link a:hover {
+  top: 0;
+  left: 0;
+  display: inline;
+}

@@ -1,0 +1,212 @@
+// box-sizing
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+}
+
+// body
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $base-text-color;
+  background: $base-background-color;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+
+// headings
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: $gray80;
+  font-weight: 700;
+}
+
+h1,
+.h1 {
+  margin: 0 0 .5rem;
+  font-size: $font36;
+}
+
+h2,
+.h2 {
+  margin: 2rem 0 .5rem;
+  font-size: $font32;
+}
+
+h3,
+.h3 {
+  margin: 2rem 0 .5rem;
+  font-size: $font24;
+}
+
+h4,
+.h4 {
+  margin: 2rem 0 .5rem;
+  font-size: $font18;
+}
+
+h5,
+.h5 {
+  margin: 2rem 0 .5rem;
+  font-size: $font16;
+}
+
+h6,
+.h6 {
+  margin: 2rem 0 .5rem;
+  font-size: $font14;
+}
+
+
+// paragraphs
+
+p {
+  margin: 0 0 1.5rem;
+  line-height: 1.5;
+}
+
+
+// img
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+// links
+
+a:link {
+  color: $link-color;
+}
+
+a:visited {
+  color: $link-color-visited;
+}
+
+a:focus {
+  outline: 2px dotted $black;
+  color: $black;
+}
+
+a:hover {
+  color: $link-color-hover;
+}
+
+a:active {
+  color: $link-color-active;
+}
+
+
+// hr
+
+hr {
+  display: block;
+  height: 5px;
+  border: 0;
+  margin: 2rem 0;
+  background: $gray5;
+}
+
+
+// code
+
+kbd,
+code {
+  background: $gray10;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+// figure
+
+figure {
+  margin: 1rem 0;
+  padding: 0;
+}
+
+figcaption {
+  display: block;
+  margin: .4rem 0;
+  color: $gray70;
+  font-style: italic;
+}
+
+
+// tables
+
+.table-container {
+  overflow-y: auto;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: $font14;
+}
+
+caption {
+  padding: 0 0 .5rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+th,
+td {
+  border-bottom: 1px solid $base-table-color;
+  padding: 1rem .5rem;
+  text-align: left;
+  vertical-align: middle;
+}
+
+th {
+  padding: .6rem .5rem;
+  background: $gray5;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+
+// lists
+
+ul,
+ol {
+  padding-left: 1.5rem;
+
+  li {
+    margin-bottom: .2rem;
+    line-height: 1.5;
+  }
+}
+
+dl {
+  line-height: 1.5;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 0 .5rem;
+  padding: 0;
+}

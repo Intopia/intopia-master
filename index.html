@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Github repo master</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <!-- Master CSS file -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- skip to content link -->
+  <div class="skip-link">
+    <a href="#main">Skip to content (Press enter)</a>
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="container">
+      <h1 class="header__logo"><a href="http://code.intopia.digital"><img src="assets/img/code-intopia.png" alt="Code Intopia"></a></h1>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner">
+    <div class="container">
+      <h2>Github repo master</h2>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- Navigation -->
+    <div class="aside">
+      <ul class="menu">
+        <li><a href="#template">Problem template</a></li>
+        <li><a href="#headings">Headings</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#unordered">Unordered list</a></li>
+        <li><a href="#ordered">Ordered list</a></li>
+        <li><a href="#description">Description list</a></li>
+        <li><a href="#figure">Figure</a></li>
+        <li><a href="#table">Table</a></li>
+        <li><a href="#input">Input</a></li>
+        <li><a href="#textarea">Textarea</a></li>
+        <li><a href="#select">Select</a></li>
+        <li><a href="#radiogroup">Radio group</a></li>
+        <li><a href="#checkbox">Checkbox</a></li>
+        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="#menu">Menu component</a></li>
+        <li><a href="#color">Color utilities</a></li>
+        <li><a href="#background">Background-color utilities</a></li>
+        <li><a href="#font">Font utilities</a></li>
+        <li><a href="#text">Text utilities</a></li>
+        <li><a href="#hidden">Hidden utility</a></li>
+        <li><a href="#message">Message utilities</a></li>
+        <li><a href="#pass">Pass/fail utilities</a></li>
+      </ul>
+      <div>
+        <a class="link-primary" href="https://github.com/Intopia/intopia-master">Download Git repo</a>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="main" id="main">
+      <p>A simple pattern library for all Intopia Code Github repos to make development time quicker, and with a more consistent appearance.</p>
+      <hr>
+
+      <h3 id="template">Problem template</h3>
+      <p><a href="problem-template.html">A ready-to-use problem template</a></p>
+      <hr>
+
+      <h3 id="headings">Headings</h3>
+      <p>This element represent headings from the highest to lowest rank.</p>
+      <div class="example">
+        <h1>Heading level 1 (.h1)</h1>
+        <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+        repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
+        quaerat in quae quidem nulla, iste molestiae optio.</p>
+        <h2>Heading level 2 (.h2)</h2>
+        <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+        repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
+        quaerat in quae quidem nulla, iste molestiae optio.</p>
+        <h3>Heading level 3 (.h3)</h3>
+        <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+        repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
+        quaerat in quae quidem nulla, iste molestiae optio.</p>
+        <h4>Heading level 4 (.h4)</h4>
+        <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+        repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
+        quaerat in quae quidem nulla, iste molestiae optio.</p>
+        <h5>Heading level 5 (.h5)</h5>
+        <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+        repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
+        quaerat in quae quidem nulla, iste molestiae optio.</p>
+        <h6>Heading level 6 (.h6)</h6>
+        <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+        repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
+        quaerat in quae quidem nulla, iste molestiae optio.</p>
+      </div>
+<pre><code class="language-markup">&lt;h1&gt;Heading level 1 (.h1)&lt;/h1&gt;
+&lt;h2&gt;Heading level 2 (.h2)&lt;/h2&gt;
+&lt;h3&gt;Heading level 3 (.h3)&lt;/h3&gt;
+&lt;h4&gt;Heading level 4 (.h4)&lt;/h4&gt;
+&lt;h5&gt;Heading level 5 (.h5)&lt;/h5&gt;
+&lt;h6&gt;Heading level 6 (.h6)&lt;/h6&gt;
+</code></pre>
+      <hr>
+
+      <h3 id="links">Links</h3>
+      <p>This element represents an anchor element. If this element has an <code>href</code> attribute, then it represents a hyperlink.</p>
+      <div class="example">
+        <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+        repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
+        quaerat in quae quidem nulla, iste molestiae optio.</p>
+        <p><a href="#">This is a link</a></p>
+        <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+        repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
+        quaerat in quae quidem nulla, iste molestiae optio.</p>
+        <p><a href="#" class="link-primary">.link-primary</a></p>
+        <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+        repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
+        quaerat in quae quidem nulla, iste molestiae optio.</p>
+        <p><a href="#" class="link-secondary">.link-secondary</a></p>
+        <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+        repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
+        quaerat in quae quidem nulla, iste molestiae optio.</p>
+      </div>
+<pre><code class="language-markup">&lt;a href="#"&gt;This is a link&lt;/a&gt;
+</code></pre>
+      <hr>
+
+      <h3 id="unordered">Unordered list</h3>
+      <p>This element represents a list of items, where the order of the list items is not important.</p>
+      <div class="example">
+        <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+        repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
+        quaerat in quae quidem nulla, iste molestiae optio.</p>
+        <ul>
+          <li>List item 1</li>
+          <li>List item 2</li>
+          <li>List item 3</li>
+          <li>List item 4</li>
+        </ul>
+        <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+        repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
+        quaerat in quae quidem nulla, iste molestiae optio.</p>
+      </div>
+<pre><code class="language-markup">&lt;ul&gt;
+  &lt;li&gt;List item 1&lt;/li&gt;
+  &lt;li&gt;List item 2&lt;/li&gt;
+  &lt;li&gt;List item 3&lt;/li&gt;
+  &lt;li&gt;List item 4&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+      <hr>
+
+      <h3 id="ordered">Ordered list</h3>
+      <p>This element represents a list of items, where the items have been intentionally ordered.</p>
+      <div class="example">
+        <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+        repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
+        quaerat in quae quidem nulla, iste molestiae optio.</p>
+        <ol>
+          <li>List item 1</li>
+          <li>List item 2</li>
+          <li>List item 3</li>
+          <li>List item 4</li>
+        </ol>
+        <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+        repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
+        quaerat in quae quidem nulla, iste molestiae optio.</p>
+      </div>
+<pre><code class="language-markup">&lt;ol&gt;
+  &lt;li&gt;List item 1&lt;/li&gt;
+  &lt;li&gt;List item 2&lt;/li&gt;
+  &lt;li&gt;List item 3&lt;/li&gt;
+  &lt;li&gt;List item 4&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+      <hr>
+
+      <h3 id="description">Definition/Description list</h3>
+      <p>This elements represents a description list consisting of zero or more name-value groups. Each group must consist of one or more names (dt elements) each followed by one or more values (dd elements).</p>
+      <div class="example">
+        <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+        repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
+        quaerat in quae quidem nulla, iste molestiae optio.</p>
+        <dl>
+          <dt>Definition term 1</dt>
+          <dd>Definition description 1</dd>
+          <dt>Definition term 2</dt>
+          <dd>Definition description 2</dd>
+          <dt>Definition term 3</dt>
+          <dd>Definition description 3</dd>
+          <dt>Definition term 4</dt>
+          <dd>Definition description 4</dd>
+        </dl>
+        <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+        repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
+        quaerat in quae quidem nulla, iste molestiae optio.</p>
+      </div>
+<pre><code class="language-markup">&lt;dl&gt;
+  &lt;dt&gt;Definition term 1&lt;/dt&gt;
+  &lt;dd&gt;Definition description 1&lt;/dd&gt;
+  &lt;dt&gt;Definition term 2&lt;/dt&gt;
+  &lt;dd&gt;Definition description 2&lt;/dd&gt;
+  &lt;dt&gt;Definition term 3&lt;/dt&gt;
+  &lt;dd&gt;Definition description 3&lt;/dd&gt;
+  &lt;dt&gt;Definition term 4&lt;/dt&gt;
+  &lt;dd&gt;Definition description 4&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+      <hr>
+
+      <h3 id="figure">Figure and figcaption</h3>
+      <p>This element represents some flow content, optionally with a <code>figcaption</code>, that is self-contained and is typically referenced as a single unit from the main flow of the document.</p>
+      <div class="example">
+        <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+        repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
+        quaerat in quae quidem nulla, iste molestiae optio.</p>
+        <figure>
+          <img src="http://placehold.it/200x200" alt="">
+          <figcaption>Figcaption</figcaption>
+        </figure>
+        <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+        repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
+        quaerat in quae quidem nulla, iste molestiae optio.</p>
+      </div>
+<pre><code class="language-markup">&lt;figure&gt;
+  &lt;img src="http://placehold.it/200x200" alt=""&gt;
+  &lt;figcaption&gt;Figcaption&lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
+      <hr>
+
+      <h3 id="table">Table</h3>
+      <p>This element represents data with more than one dimension, in the form of a table. The table will become responsive (horizontal scroll bars will be present) only if content inside forces the table to be wider than the parent container.</p>
+      <div class="example">
+        <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+        repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
+        quaerat in quae quidem nulla, iste molestiae optio.</p>
+        <div class="table-container">
+          <table>
+            <caption>Table Caption</caption>
+            <thead>
+              <tr>
+                <th>HeaderCell1</th>
+                <th>HeaderCell2</th>
+                <th>HeaderCell3</th>
+                <th>HeaderCell4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>TableCell1Row1</td>
+                <td>TableCell2Row1</td>
+                <td>TableCell3Row1</td>
+                <td>TableCell4Row1</td>
+              </tr>
+              <tr>
+                <td>TableCell1Row2</td>
+                <td>TableCell2Row2</td>
+                <td>TableCell3Row2</td>
+                <td>TableCell4Row2</td>
+              </tr>
+              <tr>
+                <td>TableCell1Row3</td>
+                <td>TableCell2Row3</td>
+                <td>TableCell3Row3</td>
+                <td>TableCell4Row3</td>
+              </tr>
+              <tr>
+                <td>TableCell1Row4</td>
+                <td>TableCell2Row4</td>
+                <td>TableCell3Row4</td>
+                <td>TableCell4Row4</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+        repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
+        quaerat in quae quidem nulla, iste molestiae optio.</p>
+      </div>
+<pre><code class="language-markup">&lt;div class="table-container"&gt;
+  &lt;table&gt;
+    &lt;caption&gt;Table Caption&lt;/caption&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;HeaderCell1&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;TableCell1Row1&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+</code></pre>
+      <hr>
+
+      <h3 id="input">Input</h3>
+      <p>This element represents a typed data field, usually with a form control to allow the user to edit the data.</p>
+      <div class="example">
+        <!-- Input -->
+        <div class="input">
+          <label class="input__label" for="example01">Input</label>
+          <input class="input__control" type="text" id="example01">
+        </div>
+        <!-- Input with help text -->
+        <div class="input">
+          <label class="input__label" for="example02">Input with help text</label>
+          <input class="input__control" type="text" id="example02" aria-describedby="message01">
+          <span class="message-hint" id="message01">Help text</span>
+        </div>
+        <!-- Input with required flag -->
+        <div class="input">
+          <label class="input__label" for="example03">Input with required flag <span class="message-required">(Required)</span></label>
+          <input class="input__control" type="text" id="example03" required>
+        </div>
+        <!-- Input in error state -->
+        <div class="input input-error">
+          <label class="input__label" for="example04">Input in error state <span class="message-required">(Required)</span></label>
+          <input class="input__control" type="text" id="example04" required aria-describedby="error04">
+          <span class="message-error" id="error04">Error message</span>
+        </div>
+      </div>
+<pre><code class="language-markup">&lt;!-- Input --&gt;
+&lt;div class="input"&gt;
+  &lt;label class="input__label" for="example01"&gt;Input&lt;/label&gt;
+  &lt;input class="input__control" type="text" id="example01"&gt;
+&lt;/div&gt;
+
+&lt;!-- Input with help text --&gt;
+&lt;div class="input"&gt;
+  &lt;label class="input__label" for="example02"&gt;Input with help text&lt;/label&gt;
+  &lt;input class="input__control" type="text" id="example02" aria-describedby="message01"&gt;
+  &lt;span class="message-hint" id="message01"&gt;Help text&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Input with required flag --&gt;
+&lt;div class="input"&gt;
+  &lt;label class="input__label" for="example03"&gt;Input with required flag &lt;span class="message-required"&gt;(Required)&lt;/span&gt;&lt;/label&gt;
+  &lt;input class="input__control" type="text" id="example03" required&gt;
+&lt;/div&gt;
+
+&lt;!-- Input in error state --&gt;
+&lt;div class="input input-error"&gt;
+  &lt;label class="input__label" for="example04"&gt;Input in error state &lt;span class="message-required"&gt;(Required)&lt;/span&gt;&lt;/label&gt;
+  &lt;input class="input__control" type="text" id="example04" required aria-describedby="error04"&gt;
+  &lt;span class="message-error" id="error04"&gt;Error message&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+      <hr>
+
+      <h3 id="textarea">Textarea</h3>
+      <p>The textarea element represents a multiline plain text edit control for the element's raw value. The contents of the control represent the control's default value.</p>
+      <div class="example">
+        <!-- Textarea -->
+        <div class="textarea">
+          <label class="textarea__label" for="example05">Textarea</label>
+          <textarea class="textarea__control" id="example05"></textarea>
+        </div>
+        <!-- Textarea with help text -->
+        <div class="textarea">
+          <label class="textarea__label" for="example06">Textarea with help text</label>
+          <textarea class="textarea__control" id="example06" aria-describedby="message06"></textarea>
+          <span class="message-hint" id="message06">Help text</span>
+        </div>
+        <!-- Textarea with required flag -->
+        <div class="textarea">
+          <label class="textarea__label" for="example07">Textarea with required flag <span class="message-required">(Required)</span></label>
+          <textarea class="textarea__control" id="example07" required></textarea>
+        </div>
+        <!-- Textarea in error state -->
+        <div class="textarea textarea-error">
+          <label class="textarea__label" for="example08">Textarea in error state <span class="message-required">(Required)</span></label>
+          <textarea class="textarea__control" id="example08" required aria-describedby="error08"></textarea>
+          <span class="message-error" id="error08">Error message</span>
+        </div>
+      </div>
+<pre><code class="language-markup">&lt;!-- Textarea --&gt;
+&lt;div class="textarea"&gt;
+  &lt;label class="textarea__label" for="example05"&gt;Textarea&lt;/label&gt;
+  &lt;textarea class="textarea__control" id="example05"&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+
+&lt;!-- Textarea with help text --&gt;
+&lt;div class="textarea"&gt;
+  &lt;label class="textarea__label" for="example06"&gt;Textarea with help text&lt;/label&gt;
+  &lt;textarea class="textarea__control" id="example06" aria-describedby="message06"&gt;&lt;/textarea&gt;
+  &lt;span class="message-hint" id="message06"&gt;Help text&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Textarea with required flag --&gt;
+&lt;div class="textarea"&gt;
+  &lt;label class="textarea__label" for="example07"&gt;Textarea with required flag &lt;span class="message-required"&gt;(Required)&lt;/span&gt;&lt;/label&gt;
+  &lt;textarea class="textarea__control" id="example07" required&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+
+&lt;!-- Textarea in error state --&gt;
+&lt;div class="textarea textarea-error"&gt;
+  &lt;label class="textarea__label" for="example08"&gt;Textarea in error state &lt;span class="message-required"&gt;(Required)&lt;/span&gt;&lt;/label&gt;
+  &lt;textarea class="textarea__control" id="example08" required aria-describedby="error08"&gt;&lt;/textarea&gt;
+  &lt;span class="message-error" id="error08"&gt;Error message&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+      <hr>
+
+      <h3 id="select">Select</h3>
+      <p>This element represents a control for selecting amongst a set of options.</p>
+      <div class="example">
+        <!-- Select -->
+        <div class="select">
+          <label class="select__label" for="example09">Select</label>
+          <select class="select__control" id="example09">
+            <option value="">Choose an option</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+        </div>
+        <!-- Select with help text -->
+        <div class="select">
+          <label class="select__label" for="example10">Select with help text</label>
+          <select class="select__control" id="example10" aria-describedby="message10">
+            <option value="">Choose an option</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+          <span class="message-hint" id="message10">Help text</span>
+        </div>
+        <!-- Select with required flag -->
+        <div class="select">
+          <label class="select__label" for="example11">Select with required flag <span class="message-required">(Required)</span></label>
+          <select class="select__control" id="example11" required>
+            <option value="">Choose an option</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+        </div>
+        <!-- Select in error state -->
+        <div class="select select-error">
+          <label class="select__label" for="example12">Select in error state <span class="message-required">(Required)</span></label>
+          <select class="select__control" id="example12" required aria-describedby="error12">
+            <option value="">Choose an option</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+          <span class="message-error" id="error12">Error message</span>
+        </div>
+      </div>
+<pre><code class="language-markup">&lt;!-- Select --&gt;
+&lt;div class="select"&gt;
+  &lt;label class="select__label" for="example09"&gt;Select&lt;/label&gt;
+  &lt;select class="select__control" id="example09"&gt;
+    &lt;option value=""&gt;Choose an option&lt;/option&gt;
+    &lt;option value="option1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="option2"&gt;Option 2&lt;/option&gt;
+    &lt;option value="option3"&gt;Option 3&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+
+&lt;!-- Select with help text --&gt;
+&lt;div class="select"&gt;
+  &lt;label class="select__label" for="example10"&gt;Select with help text&lt;/label&gt;
+  &lt;select class="select__control" id="example10" aria-describedby="message10"&gt;
+    &lt;option value=""&gt;Choose an option&lt;/option&gt;
+    &lt;option value="option1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="option2"&gt;Option 2&lt;/option&gt;
+    &lt;option value="option3"&gt;Option 3&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;span class="message-hint" id="message10"&gt;Help text&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Select with required flag --&gt;
+&lt;div class="select"&gt;
+  &lt;label class="select__label" for="example11"&gt;Select with required flag &lt;span class="message-required"&gt;(Required)&lt;/span&gt;&lt;/label&gt;
+  &lt;select class="select__control" id="example11" required&gt;
+    &lt;option value=""&gt;Choose an option&lt;/option&gt;
+    &lt;option value="option1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="option2"&gt;Option 2&lt;/option&gt;
+    &lt;option value="option3"&gt;Option 3&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+
+&lt;!-- Select in error state --&gt;
+&lt;div class="select select-error"&gt;
+  &lt;label class="select__label" for="example12"&gt;Select in error state &lt;span class="message-required"&gt;(Required)&lt;/span&gt;&lt;/label&gt;
+  &lt;select class="select__control" id="example12" required aria-describedby="error12"&gt;
+    &lt;option value=""&gt;Choose an option&lt;/option&gt;
+    &lt;option value="option1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="option2"&gt;Option 2&lt;/option&gt;
+    &lt;option value="option3"&gt;Option 3&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;span class="message-error" id="error12"&gt;Error message&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+      <hr>
+
+      <h3 id="radiogroup">Radiogroup</h3>
+      <p>This element represents an <code>&lt;input&gt;</code> element with a type of radio and its explicitly associated <code>&lt;label&gt;</code> element.</p>
+      <div class="example">
+        <fieldset class="radiogroup">
+          <legend class="radiogroup__legend">Radio group</legend>
+          <ul class="radiogroup__list">
+            <li>
+              <div class="radiogroup_item">
+                <input class="radiogroup__control" id="example13" type="radio" name="radiogroup">
+                <label class="radiogroup__label" for="example13">Item 1</label>
+              </div>
+            </li>
+            <li>
+              <div class="radiogroup_item">
+                <input class="radiogroup__control" id="example14" type="radio" name="radiogroup">
+                <label class="radiogroup__label" for="example14">Item 2</label>
+              </div>
+            </li>
+            <li>
+              <div class="radiogroup_item">
+                <input class="radiogroup__control" id="example15" type="radio" name="radiogroup">
+                <label class="radiogroup__label" for="example15">Item 3</label>
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+<pre><code class="language-markup">&lt;fieldset class="radiogroup"&gt;
+  &lt;legend class="radiogroup__legend"&gt;Radio group&lt;/legend&gt;
+  &lt;ul class="radiogroup__list"&gt;
+    &lt;li&gt;
+      &lt;div class="radiogroup_item"&gt;
+        &lt;input class="radiogroup__control" id="example13" type="radio" name="radiogroup"&gt;
+        &lt;label class="radiogroup__label" for="example13"&gt;Item 1&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class="radiogroup_item"&gt;
+        &lt;input class="radiogroup__control" id="example14" type="radio" name="radiogroup"&gt;
+        &lt;label class="radiogroup__label" for="example14"&gt;Item 2&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class="radiogroup_item"&gt;
+        &lt;input class="radiogroup__control" id="example15" type="radio" name="radiogroup"&gt;
+        &lt;label class="radiogroup__label" for="example15"&gt;Item 3&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/fieldset&gt;
+</code></pre>
+      <hr>
+
+      <h3 id="checkbox">Checkbox</h3>
+      <p>This element represents an <code>&lt;input&gt;</code> element with a type of <code>checkbox</code> and its explicitly associated <code>&lt;label&gt;</code> element.</p>
+      <div class="example">
+        <div class="checkbox">
+          <input class="checkbox__control" id="example16" type="checkbox">
+          <label class="checkbox__label" for="example16">Checkbox</label>
+        </div>
+      </div>
+<pre><code class="language-markup">&lt;div class="checkbox"&gt;
+  &lt;input class="checkbox__control" id="example16" type="checkbox"&gt;
+  &lt;label class="checkbox__label" for="example16"&gt;Checkbox&lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+      <hr>
+
+      <h3 id="buttons">Button</h3>
+      <p>The <code>&lt;button&gt;</code> element represents a clickable button.</p>
+      <div class="example">
+        <button class="button-secondary" type="button">Cancel</button>
+        <button class="button-primary" type="button">Submit</button>
+      </div>
+<pre><code class="language-markup">&lt;button class="button-secondary" type="button"&gt;Cancel&lt;/button&gt;
+&lt;button class="button-primary" type="button"&gt;Submit&lt;/button&gt;
+</code></pre>
+      <hr>
+
+      <h3 id="menu">Menu component</h3>
+      <p>The <code>.menu</code> component can be used for in-page navigation.</p>
+      <div class="example">
+        <ul class="menu">
+          <li><a href="#problem">The problem</a></li>
+          <li><a href="#tests">Test criteria</a></li>
+          <li><a href="#solutions">Test cases</a></li>
+          <li><a href="#results">Test results</a></li>
+          <li><a href="#recommendations">Recommendations</a></li>
+          <li><a href="#wcag">WCAG checkpoints</a></li>
+          <li><a class="menu__external" href="http://code.intopia.digital">Home</a></li>
+        </ul>
+      </div>
+<pre><code class="language-markup">&lt;ul class="menu"&gt;
+  &lt;li&gt;&lt;a href="#problem"&gt;The problem&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#tests"&gt;Test criteria&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#solutions"&gt;Test cases&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#results"&gt;Test results&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#recommendations"&gt;Recommendations&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#wcag"&gt;WCAG checkpoints&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="menu__external" href="http://code.intopia.digital"&gt;&laquo; Home&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+      <hr>
+
+      <h3 id="color">Color utilities</h3>
+      <p>These utility classes can be used to add pre-defined colors to any element.</p>
+      <div class="example c-primary-color">.c-primary-color - 4.54:1</div>
+      <div class="example c-secondary-color">.c-secondary-color - 4.61:1</div>
+      <div class="example c-black">.c-black - 21:1</div>
+      <div class="example c-white bg-black">.c-white - 21:1</div>
+      <div class="example c-red">.c-red - 6.74:1</div>
+      <div class="example c-green">.c-green - 5.13:1</div>
+      <div class="example c-gray55">.c-gray55 - 4.74:1</div>
+      <div class="example c-gray60">.c-gray60 - 5.74:1</div>
+      <div class="example c-gray65">.c-gray65 - 7:1</div>
+      <div class="example c-gray70">.c-gray70 - 8.45:1</div>
+      <div class="example c-gray75">.c-gray75 - 10.36:1</div>
+      <div class="example c-gray80">.c-gray80 - 12.63:1</div>
+      <div class="example c-gray85">.c-gray85 - 15.13:1</div>
+      <div class="example c-gray90">.c-gray90 - 17.4:1</div>
+<pre><code class="language-markup">&lt;div class="c-primary-color"&gt;.c-primary-color&lt;/div&gt;
+&lt;div class="c-secondary-color"&gt;.c-secondary-color&lt;/div&gt;
+&lt;div class="c-black"&gt;.c-black&lt;/div&gt;
+&lt;div class="c-white"&gt;.c-white&lt;/div&gt;
+&lt;div class="c-red"&gt;.c-red&lt;/div&gt;
+&lt;div class="c-green"&gt;.c-green&lt;/div&gt;
+&lt;div class="c-gray55"&gt;.c-gray55&lt;/div&gt;
+&lt;div class="c-gray60"&gt;.c-gray60&lt;/div&gt;
+&lt;div class="c-gray65"&gt;.c-gray65&lt;/div&gt;
+&lt;div class="c-gray70"&gt;.c-gray70&lt;/div&gt;
+&lt;div class="c-gray75"&gt;.c-gray75&lt;/div&gt;
+&lt;div class="c-gray80"&gt;.c-gray80&lt;/div&gt;
+&lt;div class="c-gray85"&gt;.c-gray85&lt;/div&gt;
+&lt;div class="c-gray90"&gt;.c-gray90&lt;/div&gt;
+</code></pre>
+      <hr>
+
+      <h3 id="background">Background-color utilities</h3>
+      <p>These utility classes can be used to add pre-defined background-colors to any element.</p>
+      <div class="example bg-primary-color c-white">.bg-primary-color</div>
+      <div class="example bg-secondary-color c-white">.bg-secondary-color</div>
+      <div class="example bg-black c-white">.bg-black</div>
+      <div class="example bg-white">.bg-white</div>
+      <div class="example bg-red c-white">.bg-red</div>
+      <div class="example bg-green c-white">.bg-green</div>
+      <div class="example bg-gray5">.bg-gray5</div>
+      <div class="example bg-gray10">.bg-gray10</div>
+      <div class="example bg-gray15">.bg-gray15</div>
+      <div class="example bg-gray20">.bg-gray20</div>
+      <div class="example bg-gray25">.bg-gray25</div>
+      <div class="example bg-gray30">.bg-gray30</div>
+      <div class="example bg-gray35">.bg-gray35</div>
+      <div class="example bg-gray40">.bg-gray40</div>
+      <div class="example bg-gray45">.bg-gray45</div>
+      <div class="example bg-gray50">.bg-gray50</div>
+      <div class="example bg-gray55 c-white">.bg-gray55</div>
+      <div class="example bg-gray60 c-white">.bg-gray60</div>
+      <div class="example bg-gray65 c-white">.bg-gray65</div>
+      <div class="example bg-gray70 c-white">.bg-gray70</div>
+      <div class="example bg-gray75 c-white">.bg-gray75</div>
+      <div class="example bg-gray80 c-white">.bg-gray80</div>
+      <div class="example bg-gray85 c-white">.bg-gray85</div>
+      <div class="example bg-gray90 c-white">.bg-gray90</div>
+<pre><code class="language-markup">&lt;div class="bg-primary-color"&gt;.bg-primary-color&lt;/div&gt;
+&lt;div class="bg-secondary-color"&gt;.bg-secondary-color&lt;/div&gt;
+&lt;div class="bg-black"&gt;.bg-black&lt;/div&gt;
+&lt;div class="bg-white"&gt;.bg-white&lt;/div&gt;
+&lt;div class="bg-red"&gt;.bg-red&lt;/div&gt;
+&lt;div class="bg-green"&gt;.bg-green&lt;/div&gt;
+&lt;div class="bg-gray5"&gt;.bg-gray5&lt;/div&gt;
+&lt;div class="bg-gray10"&gt;.bg-gray10&lt;/div&gt;
+&lt;div class="bg-gray15"&gt;.bg-gray15&lt;/div&gt;
+&lt;div class="bg-gray20"&gt;.bg-gray20&lt;/div&gt;
+&lt;div class="bg-gray25"&gt;.bg-gray25&lt;/div&gt;
+&lt;div class="bg-gray30"&gt;.bg-gray30&lt;/div&gt;
+&lt;div class="bg-gray35"&gt;.bg-gray35&lt;/div&gt;
+&lt;div class="bg-gray40"&gt;.bg-gray40&lt;/div&gt;
+&lt;div class="bg-gray45"&gt;.bg-gray45&lt;/div&gt;
+&lt;div class="bg-gray50"&gt;.bg-gray50&lt;/div&gt;
+&lt;div class="bg-gray55"&gt;.bg-gray55&lt;/div&gt;
+&lt;div class="bg-gray60"&gt;.bg-gray60&lt;/div&gt;
+&lt;div class="bg-gray65"&gt;.bg-gray65&lt;/div&gt;
+&lt;div class="bg-gray70"&gt;.bg-gray70&lt;/div&gt;
+&lt;div class="bg-gray75"&gt;.bg-gray75&lt;/div&gt;
+&lt;div class="bg-gray80"&gt;.bg-gray80&lt;/div&gt;
+&lt;div class="bg-gray85"&gt;.bg-gray85&lt;/div&gt;
+&lt;div class="bg-gray90"&gt;.bg-gray90&lt;/div&gt;
+</code></pre>
+      <hr>
+
+      <h3 id="font">Font utilities</h3>
+      <p>These utility classes can be used to add pre-defined font sizes to any element.</p>
+      <div class="example font36">.font36</div>
+      <div class="example font34">.font34</div>
+      <div class="example font32">.font32</div>
+      <div class="example font30">.font30</div>
+      <div class="example font28">.font28</div>
+      <div class="example font26">.font26</div>
+      <div class="example font24">.font24</div>
+      <div class="example font22">.font22</div>
+      <div class="example font20">.font20</div>
+      <div class="example font18">.font18</div>
+      <div class="example font16">.font16</div>
+      <div class="example font14">.font14</div>
+      <div class="example font12">.font12</div>
+      <div class="example font10">.font10</div>
+<pre><code class="language-markup">&lt;div class="font36"&gt;.font36&lt;/div&gt;
+&lt;div class="font34"&gt;.font34&lt;/div&gt;
+&lt;div class="font32"&gt;.font32&lt;/div&gt;
+&lt;div class="font30"&gt;.font30&lt;/div&gt;
+&lt;div class="font28"&gt;.font28&lt;/div&gt;
+&lt;div class="font26"&gt;.font26&lt;/div&gt;
+&lt;div class="font24"&gt;.font24&lt;/div&gt;
+&lt;div class="font22"&gt;.font22&lt;/div&gt;
+&lt;div class="font20"&gt;.font20&lt;/div&gt;
+&lt;div class="font18"&gt;.font18&lt;/div&gt;
+&lt;div class="font16"&gt;.font16&lt;/div&gt;
+&lt;div class="font14"&gt;.font14&lt;/div&gt;
+&lt;div class="font12"&gt;.font12&lt;/div&gt;
+&lt;div class="font10"&gt;.font10&lt;/div&gt;
+</code></pre>
+      <hr>
+
+      <h3 id="text">Text utilities</h3>
+      <p>These utility classes can be used to add pre-defined text alignment styles to any element.</p>
+      <div class="example text-left">.text-left</div>
+      <div class="example text-right">.text-right</div>
+      <div class="example text-center">.text-center</div>
+<pre><code class="language-markup">&lt;div class="text-left"&gt;.text-left&lt;/div&gt;
+&lt;div class="text-right"&gt;.text-right&lt;/div&gt;
+&lt;div class="text-center"&gt;.text-center&lt;/div&gt;
+</code></pre>
+      <hr>
+
+      <h3 id="hidden">Hidden utility</h3>
+      <p>This utility class can be used to hide content off-screen.</p>
+      <div class="example">The following text should be hidden: <span class="hidden">.hidden</span></div>
+<pre><code class="language-markup">&lt;span class="hidden"&gt;.hidden&lt;/span&gt;
+</code></pre>
+      <hr>
+
+      <h3 id="message">Message utilities</h3>
+      <p>These utility classes can be used to style different types of messages.</p>
+      <div class="example"><span class="message-error">.message-error</span></div>
+      <div class="example"><span class="message-hint">.message-hint</span></div>
+      <div class="example"><span class="message-required">.message-required</span></div>
+<pre><code class="language-markup">&lt;span class="message-error"&gt;.message-error&lt;/span&gt;
+&lt;span class="message-hint"&gt;.message-hint&lt;/span&gt;
+&lt;span class="message-required"&gt;.message-required&lt;/span&gt;
+</code></pre>
+      <hr>
+
+      <h3 id="pass">Pass/Fail utilities</h3>
+      <p>These utility classes can be used to style pass and fail flags.</p>
+      <div class="example"><span class="pass">.pass</span></div>
+      <div class="example"><span class="fail">.fail</span></div>
+<pre><code class="language-markup">&lt;span class="pass"&gt;.pass&lt;/span&gt;
+&lt;span class="fail"&gt;.fail&lt;/span&gt;
+</code></pre>
+      <hr>
+
+    </div>
+  </div>
+
+<script src="assets/js/prism.js"></script>
+</body>
+</html>
