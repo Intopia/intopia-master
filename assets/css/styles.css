@@ -592,8 +592,7 @@ pre[class*="language-"] {
   display: block;
   margin: .25em 0 0;
   color: #b00;
-  font-size: 0.875em;
-  font-style: italic; }
+  font-size: 0.875em; }
 
 .message-error-radio-group {
   margin: 1em 0 0; }
@@ -603,8 +602,7 @@ pre[class*="language-"] {
   display: block;
   margin: .25em 0 0;
   color: #595959;
-  font-size: 0.875em;
-  font-style: italic; }
+  font-size: 0.875em; }
 
 .message-hint-radio-group {
   margin: 1em 0 0; }
