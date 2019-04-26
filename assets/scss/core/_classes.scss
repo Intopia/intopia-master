@@ -34,7 +34,7 @@
 .select__control {
   display: block;
   width: 100%;
-  height: 2.2rem;
+  height: 2.75rem;
   border: 2px solid $base-border-color;
   border-radius: .3rem;
   padding: 0 .5rem;
@@ -124,14 +124,14 @@
 
 .button-primary,
 .button-secondary {
-  height: 2.5rem;
+  height: 2.75rem;
   border-radius: 2.2rem;
   padding: 0 1rem;
   cursor: pointer;
   font-family: inherit;
   font-size: 1rem;
   font-weight: 700;
-  line-height: 2.5rem;
+  line-height: 2.75rem;
 }
 
 .button-primary {
@@ -174,14 +174,14 @@
 .link-primary,
 .link-secondary {
   display: inline-block;
-  height: 2.5rem;
+  height: 2.75rem;
   border-radius: 2.2rem;
   padding: 0 1rem;
   cursor: pointer;
   font-family: inherit;
   font-size: 1rem;
   font-weight: 700;
-  line-height: 2.5rem;
+  line-height: 2.75rem;
   text-decoration: none;
 }
 
@@ -268,7 +268,7 @@
   a {
     display: block;
     border-bottom: 1px solid $gray15;
-    padding: .4rem .2rem;
+    padding: .6rem .2rem;
     text-decoration: none;
   }
 

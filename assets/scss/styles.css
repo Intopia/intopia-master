@@ -843,7 +843,7 @@ dd {
 .select__control {
   display: block;
   width: 100%;
-  height: 2.75rem;
+  height: 2.2rem;
   border: 2px solid #999;
   border-radius: .3rem;
   padding: 0 .5rem;
@@ -912,14 +912,14 @@ dd {
 
 .button-primary,
 .button-secondary {
-  height: 2.75rem;
+  height: 2.5rem;
   border-radius: 2.2rem;
   padding: 0 1rem;
   cursor: pointer;
   font-family: inherit;
   font-size: 1rem;
   font-weight: 700;
-  line-height: 2.75rem; }
+  line-height: 2.5rem; }
 
 .button-primary {
   border: 2px solid #15828E;
@@ -953,14 +953,14 @@ dd {
 .link-primary,
 .link-secondary {
   display: inline-block;
-  height: 2.75rem;
+  height: 2.5rem;
   border-radius: 2.2rem;
   padding: 0 1rem;
   cursor: pointer;
   font-family: inherit;
   font-size: 1rem;
   font-weight: 700;
-  line-height: 2.75rem;
+  line-height: 2.5rem;
   text-decoration: none; }
 
 .link-primary {
