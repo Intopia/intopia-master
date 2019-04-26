@@ -103,8 +103,9 @@ a:visited {
 }
 
 a:focus {
-  outline: 2px dotted $black;
+  outline: 2px solid black;
   color: $black;
+  background: $gray5;
 }
 
 a:hover {

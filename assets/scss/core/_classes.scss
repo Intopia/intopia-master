@@ -60,8 +60,15 @@
 .input__control:focus,
 .textarea__control:focus,
 .select__control:focus {
-  border: 1px solid $black;
-  outline: 2px dotted $black;
+  border: 2px solid $black !important;
+  outline: 0;
+  background: $gray5;
+}
+
+.input__control:hover,
+.textarea__control:hover,
+.select__control:hover {
+  background: $gray5;
 }
 
 .input-error .input__control,
@@ -69,6 +76,8 @@
 .select-error .select__control {
   border: 2px solid $red;
 }
+
+
 
 
 // radiogroup
@@ -146,19 +155,27 @@
   background: $white;
 }
 
-.button-primary:focus,
-.button-secondary:focus {
+.button-primary:focus {
   border: 2px solid $black;
-  outline: 2px dotted $black;
-  color: $white;
-  background: $black;
+  outline: 0;
+  background: $link-color-focus;
 }
 
-.button-primary:hover,
-.button-secondary:hover {
+.button-secondary:focus {
+  border: 2px solid $black;
+  outline: 0;
+  background: $gray10;
+  color: $black;
+}
+
+.button-primary:hover {
   border: 2px solid $link-color-hover;
   color: $white;
   background: $link-color-hover;
+}
+
+.button-secondary:hover {
+  background: $gray10;
 }
 
 .button-primary:active,
@@ -197,19 +214,26 @@
   background: $white;
 }
 
-.link-primary:focus,
-.link-secondary:focus {
+.link-primary:focus {
   border: 2px solid $black;
-  outline: 2px dotted $black;
-  color: $white;
-  background: $black;
+  outline: 0;
+  background: $link-color-focus;
 }
 
-.link-primary:hover,
-.link-secondary:hover {
+.link-secondary:focus {
+  border: 2px solid $black;
+  outline: 0;
+  background: $gray10;
+}
+
+.link-primary:hover {
   border: 2px solid $link-color-hover;
   color: $white;
   background: $link-color-hover;
+}
+
+.link-secondary:hover {
+  background: $gray10;
 }
 
 .link-primary:active,
@@ -272,6 +296,7 @@
     text-decoration: none;
   }
 
+  a:focus,
   a:hover {
     background: $gray10;
   }

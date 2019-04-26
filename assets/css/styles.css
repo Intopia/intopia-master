@@ -734,8 +734,9 @@ a:visited {
   color: #126e78; }
 
 a:focus {
-  outline: 2px dotted #000;
-  color: #000; }
+  outline: 2px solid black;
+  color: #000;
+  background: #f2f2f2; }
 
 a:hover {
   color: #0e5962; }
@@ -859,8 +860,14 @@ dd {
 .input__control:focus,
 .textarea__control:focus,
 .select__control:focus {
-  border: 1px solid #000;
-  outline: 2px dotted #000; }
+  border: 2px solid #000 !important;
+  outline: 0;
+  background: #f2f2f2; }
+
+.input__control:hover,
+.textarea__control:hover,
+.select__control:hover {
+  background: #f2f2f2; }
 
 .input-error .input__control,
 .textarea-error .textarea__control,
@@ -923,18 +930,24 @@ dd {
   color: #15828E;
   background: #fff; }
 
-.button-primary:focus,
+.button-primary:focus {
+  border: 2px solid #000;
+  outline: 0;
+  background: #0e5962; }
+
 .button-secondary:focus {
   border: 2px solid #000;
-  outline: 2px dotted #000;
-  color: #fff;
-  background: #000; }
+  outline: 0;
+  background: #e5e5e5;
+  color: #000; }
 
-.button-primary:hover,
-.button-secondary:hover {
+.button-primary:hover {
   border: 2px solid #0e5962;
   color: #fff;
   background: #0e5962; }
+
+.button-secondary:hover {
+  background: #e5e5e5; }
 
 .button-primary:active,
 .button-secondary:active {
@@ -965,18 +978,23 @@ dd {
   color: #15828E;
   background: #fff; }
 
-.link-primary:focus,
+.link-primary:focus {
+  border: 2px solid #000;
+  outline: 0;
+  background: #0e5962; }
+
 .link-secondary:focus {
   border: 2px solid #000;
-  outline: 2px dotted #000;
-  color: #fff;
-  background: #000; }
+  outline: 0;
+  background: #e5e5e5; }
 
-.link-primary:hover,
-.link-secondary:hover {
+.link-primary:hover {
   border: 2px solid #0e5962;
   color: #fff;
   background: #0e5962; }
+
+.link-secondary:hover {
+  background: #e5e5e5; }
 
 .link-primary:active,
 .link-secondary:active {
@@ -1016,6 +1034,7 @@ dd {
     border-bottom: 1px solid #d9d9d9;
     padding: .6rem .2rem;
     text-decoration: none; }
+  .menu a:focus,
   .menu a:hover {
     background: #e5e5e5; }
   .menu .menu__external {
