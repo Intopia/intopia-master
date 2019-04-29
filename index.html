@@ -20,7 +20,7 @@
   <!-- Header -->
   <header class="header">
     <div class="container">
-      <h1 class="header__logo"><a href="http://code.intopia.digital"><img src="assets/img/code-intopia.png" alt="Code Intopia"></a></h1>
+      <h1 class="logo"><a href="http://code.intopia.digital"><img src="assets/img/code-intopia.png" alt="Code Intopia"></a></h1>
     </div>
   </header>
 
@@ -51,6 +51,7 @@
         <li><a href="#checkbox">Checkbox</a></li>
         <li><a href="#buttons">Buttons</a></li>
         <li><a href="#menu">Menu component</a></li>
+        <li><a href="#logo">Logo component</a></li>
         <li><a href="#color">Color utilities</a></li>
         <li><a href="#background">Background-color utilities</a></li>
         <li><a href="#font">Font utilities</a></li>
@@ -117,16 +118,8 @@
         repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
         quaerat in quae quidem nulla, iste molestiae optio.</p>
         <p><a href="#">This is a link</a></p>
-        <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
-        repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
-        quaerat in quae quidem nulla, iste molestiae optio.</p>
         <p><a href="#" class="link-primary">.link-primary</a></p>
-        <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
-        repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
-        quaerat in quae quidem nulla, iste molestiae optio.</p>
         <p><a href="#" class="link-secondary">.link-secondary</a></p>
-        <button class="button-secondary" type="button">Cancel</button>
-        <button class="button-primary" type="button">Submit</button>
         <p class="c-gray55">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
         repellat dicta quos quas mollitia quasi. Possimus placeat consectetur
         quaerat in quae quidem nulla, iste molestiae optio.</p>
@@ -311,51 +304,77 @@
       <div class="example">
         <!-- Input -->
         <div class="input">
-          <label class="input__label" for="example01">Input</label>
-          <input class="input__control" type="text" id="example01">
+          <label class="input__label" for="input01">Input</label>
+          <input class="input__control" type="text" id="input01">
         </div>
         <!-- Input with help text -->
         <div class="input">
-          <label class="input__label" for="example02">Input with help text</label>
-          <span class="message-hint" id="message01">Help text</span>
-          <input class="input__control" type="text" id="example02" aria-describedby="message01">
+          <label class="input__label" for="input02">Input with help text</label>
+          <span class="message-hint" id="input-message02">Help text</span>
+          <input class="input__control" type="text" id="input02" aria-describedby="input-message02">
         </div>
         <!-- Input with required flag -->
         <div class="input">
-          <label class="input__label" for="example03">Input with required flag <span class="message-required">(Required)</span></label>
-          <input class="input__control" type="text" id="example03" required>
+          <label class="input__label" for="input03">Input with required flag <span class="message-required">(Required)</span></label>
+          <input class="input__control" type="text" id="input03" required>
         </div>
-        <!-- Input in error state -->
+        <!-- Input with error message -->
         <div class="input input-error">
-          <label class="input__label" for="example04">Input in error state <span class="message-required">(Required)</span></label>
-          <input class="input__control" type="text" id="example04" required aria-describedby="error04">
-          <span class="message-error" id="error04">Error message</span>
+          <label class="input__label" for="input04">Input with error message</label>
+          <input class="input__control" type="text" id="input04" required aria-describedby="input-error04">
+          <span class="message-error" id="input-error04">Error message</span>
+        </div>
+        <!-- Input with help text and error message -->
+        <div class="input input-error">
+          <label class="input__label" for="input05">Input with help text and error message</label>
+          <span class="message-hint" id="input-message05">Help text</span>
+          <input class="input__control" type="text" id="input05" required aria-describedby="input-message05 input-error05">
+          <span class="message-error" id="input-error05">Error message</span>
+        </div>
+        <!-- Disabled input -->
+        <div class="input input-disabled">
+          <label class="input__label" for="input06">Disabled input</label>
+          <input class="input__control" type="text" id="input06" disabled>
         </div>
       </div>
 <pre><code class="language-markup">&lt;!-- Input --&gt;
 &lt;div class="input"&gt;
-  &lt;label class="input__label" for="example01"&gt;Input&lt;/label&gt;
-  &lt;input class="input__control" type="text" id="example01"&gt;
+  &lt;label class="input__label" for="input01"&gt;Input&lt;/label&gt;
+  &lt;input class="input__control" type="text" id="input01"&gt;
 &lt;/div&gt;
 
 &lt;!-- Input with help text --&gt;
 &lt;div class="input"&gt;
-  &lt;label class="input__label" for="example02"&gt;Input with help text&lt;/label&gt;
-  &lt;span class="message-hint" id="message01"&gt;Help text&lt;/span&gt;
-  &lt;input class="input__control" type="text" id="example02" aria-describedby="message01"&gt;
+  &lt;label class="input__label" for="input02"&gt;Input with help text&lt;/label&gt;
+  &lt;span class="message-hint" id="input-message02"&gt;Help text&lt;/span&gt;
+  &lt;input class="input__control" type="text" id="input02" aria-describedby="input-message02"&gt;
 &lt;/div&gt;
 
 &lt;!-- Input with required flag --&gt;
 &lt;div class="input"&gt;
-  &lt;label class="input__label" for="example03"&gt;Input with required flag &lt;span class="message-required"&gt;(Required)&lt;/span&gt;&lt;/label&gt;
-  &lt;input class="input__control" type="text" id="example03" required&gt;
+  &lt;label class="input__label" for="input03"&gt;Input with required flag &lt;span class="message-required"&gt;(Required)&lt;/span&gt;&lt;/label&gt;
+  &lt;input class="input__control" type="text" id="input03" required&gt;
 &lt;/div&gt;
 
-&lt;!-- Input in error state --&gt;
+&lt;!-- Input with error message --&gt;
 &lt;div class="input input-error"&gt;
-  &lt;label class="input__label" for="example04"&gt;Input in error state &lt;span class="message-required"&gt;(Required)&lt;/span&gt;&lt;/label&gt;
-  &lt;input class="input__control" type="text" id="example04" required aria-describedby="error04"&gt;
-  &lt;span class="message-error" id="error04"&gt;Error message&lt;/span&gt;
+  &lt;label class="input__label" for="input04"&gt;Input with error message&lt;/label&gt;
+  &lt;input class="input__control" type="text" id="input04" required aria-describedby="input-error04"&gt;
+  &lt;span class="message-error" id="input-error04"&gt;Error message&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Input with help text and error message --&gt;
+&lt;div class="input input-error"&gt;
+  &lt;label class="input__label" for="input05"&gt;Input with help text and error message&lt;/label&gt;
+  &lt;span class="message-hint" id="input-message05"&gt;Help text&lt;/span&gt;
+  &lt;input class="input__control" type="text" id="input05" required aria-describedby="input-message05 input-error05"&gt;
+  &lt;span class="message-error" id="input-error05"&gt;Error message&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Disabled input --&gt;
+&lt;div class="input input-disabled"&gt;
+  &lt;label class="input__label" for="input06"&gt;Disabled input&lt;/label&gt;
+  &lt;input class="input__control" type="text" id="input06" disabled&gt;
 &lt;/div&gt;
 </code></pre>
       <hr>
@@ -365,51 +384,77 @@
       <div class="example">
         <!-- Textarea -->
         <div class="textarea">
-          <label class="textarea__label" for="example05">Textarea</label>
-          <textarea class="textarea__control" id="example05"></textarea>
+          <label class="textarea__label" for="textarea01">Textarea</label>
+          <textarea class="textarea__control" id="textarea01"></textarea>
         </div>
         <!-- Textarea with help text -->
         <div class="textarea">
-          <label class="textarea__label" for="example06">Textarea with help text</label>
-          <span class="message-hint" id="message06">Help text</span>
-          <textarea class="textarea__control" id="example06" aria-describedby="message06"></textarea>
+          <label class="textarea__label" for="textarea02">Textarea with help text</label>
+          <span class="message-hint" id="textarea-message02">Help text</span>
+          <textarea class="textarea__control" id="textarea02" aria-describedby="textarea-message02"></textarea>
         </div>
         <!-- Textarea with required flag -->
         <div class="textarea">
-          <label class="textarea__label" for="example07">Textarea with required flag <span class="message-required">(Required)</span></label>
-          <textarea class="textarea__control" id="example07" required></textarea>
+          <label class="textarea__label" for="textarea03">Textarea with required flag <span class="message-required">(Required)</span></label>
+          <textarea class="textarea__control" id="textarea03" required></textarea>
         </div>
-        <!-- Textarea in error state -->
+        <!-- Textarea with error message -->
         <div class="textarea textarea-error">
-          <label class="textarea__label" for="example08">Textarea in error state <span class="message-required">(Required)</span></label>
-          <textarea class="textarea__control" id="example08" required aria-describedby="error08"></textarea>
-          <span class="message-error" id="error08">Error message</span>
+          <label class="textarea__label" for="textarea04">Textarea with error message</label>
+          <textarea class="textarea__control" id="textarea04" required aria-describedby="textarea-error04"></textarea>
+          <span class="message-error" id="textarea-error04">Error message</span>
+        </div>
+        <!-- Textarea with help text and error message -->
+        <div class="textarea textarea-error">
+          <label class="textarea__label" for="textarea05">Textarea with error message</label>
+          <span class="message-hint" id="textarea-message05">Help text</span>
+          <textarea class="textarea__control" id="textarea05" required aria-describedby="textarea-message05 textarea-error05"></textarea>
+          <span class="message-error" id="textarea-error05">Error message</span>
+        </div>
+        <!-- Disabled textarea -->
+        <div class="textarea textarea-disabled">
+          <label class="textarea__label" for="textarea06">Disabled textarea</label>
+          <textarea class="textarea__control" id="textarea06" disabled></textarea>
         </div>
       </div>
 <pre><code class="language-markup">&lt;!-- Textarea --&gt;
 &lt;div class="textarea"&gt;
-  &lt;label class="textarea__label" for="example05"&gt;Textarea&lt;/label&gt;
-  &lt;textarea class="textarea__control" id="example05"&gt;&lt;/textarea&gt;
+  &lt;label class="textarea__label" for="textarea01"&gt;Textarea&lt;/label&gt;
+  &lt;textarea class="textarea__control" id="textarea01"&gt;&lt;/textarea&gt;
 &lt;/div&gt;
 
 &lt;!-- Textarea with help text --&gt;
 &lt;div class="textarea"&gt;
-  &lt;label class="textarea__label" for="example06"&gt;Textarea with help text&lt;/label&gt;
-  &lt;span class="message-hint" id="message06"&gt;Help text&lt;/span&gt;
-  &lt;textarea class="textarea__control" id="example06" aria-describedby="message06"&gt;&lt;/textarea&gt;
+  &lt;label class="textarea__label" for="textarea02"&gt;Textarea with help text&lt;/label&gt;
+  &lt;span class="message-hint" id="textarea-message02"&gt;Help text&lt;/span&gt;
+  &lt;textarea class="textarea__control" id="textarea02" aria-describedby="textarea-message02"&gt;&lt;/textarea&gt;
 &lt;/div&gt;
 
 &lt;!-- Textarea with required flag --&gt;
 &lt;div class="textarea"&gt;
-  &lt;label class="textarea__label" for="example07"&gt;Textarea with required flag &lt;span class="message-required"&gt;(Required)&lt;/span&gt;&lt;/label&gt;
-  &lt;textarea class="textarea__control" id="example07" required&gt;&lt;/textarea&gt;
+  &lt;label class="textarea__label" for="textarea03"&gt;Textarea with required flag &lt;span class="message-required"&gt;(Required)&lt;/span&gt;&lt;/label&gt;
+  &lt;textarea class="textarea__control" id="textarea03" required&gt;&lt;/textarea&gt;
 &lt;/div&gt;
 
-&lt;!-- Textarea in error state --&gt;
+&lt;!-- Textarea with error message --&gt;
 &lt;div class="textarea textarea-error"&gt;
-  &lt;label class="textarea__label" for="example08"&gt;Textarea in error state &lt;span class="message-required"&gt;(Required)&lt;/span&gt;&lt;/label&gt;
-  &lt;textarea class="textarea__control" id="example08" required aria-describedby="error08"&gt;&lt;/textarea&gt;
-  &lt;span class="message-error" id="error08"&gt;Error message&lt;/span&gt;
+  &lt;label class="textarea__label" for="textarea04"&gt;Textarea with error message&lt;/label&gt;
+  &lt;textarea class="textarea__control" id="textarea04" required aria-describedby="textarea-error04"&gt;&lt;/textarea&gt;
+  &lt;span class="message-error" id="textarea-error04"&gt;Error message&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Textarea with help text and error message --&gt;
+&lt;div class="textarea textarea-error"&gt;
+  &lt;label class="textarea__label" for="textarea05"&gt;Textarea with error message&lt;/label&gt;
+  &lt;span class="message-hint" id="textarea-message05"&gt;Help text&lt;/span&gt;
+  &lt;textarea class="textarea__control" id="textarea05" required aria-describedby="textarea-message05 textarea-error05"&gt;&lt;/textarea&gt;
+  &lt;span class="message-error" id="textarea-error05"&gt;Error message&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Disabled textarea --&gt;
+&lt;div class="textarea textarea-disabled"&gt;
+  &lt;label class="textarea__label" for="textarea06"&gt;Disabled textarea&lt;/label&gt;
+  &lt;textarea class="textarea__control" id="textarea06" disabled&gt;&lt;/textarea&gt;
 &lt;/div&gt;
 </code></pre>
       <hr>
@@ -419,8 +464,8 @@
       <div class="example">
         <!-- Select -->
         <div class="select">
-          <label class="select__label" for="example09">Select</label>
-          <select class="select__control" id="example09">
+          <label class="select__label" for="select01">Select</label>
+          <select class="select__control" id="select01">
             <option value="">Choose an option</option>
             <option value="option1">Option 1</option>
             <option value="option2">Option 2</option>
@@ -429,9 +474,9 @@
         </div>
         <!-- Select with help text -->
         <div class="select">
-          <label class="select__label" for="example10">Select with help text</label>
-          <span class="message-hint" id="message10">Help text</span>
-          <select class="select__control" id="example10" aria-describedby="message10">
+          <label class="select__label" for="select02">Select with help text</label>
+          <span class="message-hint" id="select-message02">Help text</span>
+          <select class="select__control" id="select02" aria-describedby="select-message02">
             <option value="">Choose an option</option>
             <option value="option1">Option 1</option>
             <option value="option2">Option 2</option>
@@ -440,30 +485,52 @@
         </div>
         <!-- Select with required flag -->
         <div class="select">
-          <label class="select__label" for="example11">Select with required flag <span class="message-required">(Required)</span></label>
-          <select class="select__control" id="example11" required>
+          <label class="select__label" for="select03">Select with required flag <span class="message-required">(Required)</span></label>
+          <select class="select__control" id="select03" required>
             <option value="">Choose an option</option>
             <option value="option1">Option 1</option>
             <option value="option2">Option 2</option>
             <option value="option3">Option 3</option>
           </select>
         </div>
-        <!-- Select in error state -->
+        <!-- Select with error message -->
         <div class="select select-error">
-          <label class="select__label" for="example12">Select in error state <span class="message-required">(Required)</span></label>
-          <select class="select__control" id="example12" required aria-describedby="error12">
+          <label class="select__label" for="select04">Select with error message</label>
+          <select class="select__control" id="select04" required aria-describedby="select-error04">
             <option value="">Choose an option</option>
             <option value="option1">Option 1</option>
             <option value="option2">Option 2</option>
             <option value="option3">Option 3</option>
           </select>
-          <span class="message-error" id="error12">Error message</span>
+          <span class="message-error" id="select-error04">Error message</span>
+        </div>
+        <!-- Select with help text and error message -->
+        <div class="select select-error">
+          <label class="select__label" for="select05">Select with help text and error message</label>
+          <span class="message-hint" id="select-message05">Help text</span>
+          <select class="select__control" id="select05" required aria-describedby="select-message05 select-error05">
+            <option value="">Choose an option</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+          <span class="message-error" id="select-error05">Error message</span>
+        </div>
+        <!-- Disabled select -->
+        <div class="select select-disabled">
+          <label class="select__label" for="select01">Disabled select</label>
+          <select class="select__control" id="select01" disabled>
+            <option value="">Choose an option</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
         </div>
       </div>
 <pre><code class="language-markup">&lt;!-- Select --&gt;
 &lt;div class="select"&gt;
-  &lt;label class="select__label" for="example09"&gt;Select&lt;/label&gt;
-  &lt;select class="select__control" id="example09"&gt;
+  &lt;label class="select__label" for="select01"&gt;Select&lt;/label&gt;
+  &lt;select class="select__control" id="select01"&gt;
     &lt;option value=""&gt;Choose an option&lt;/option&gt;
     &lt;option value="option1"&gt;Option 1&lt;/option&gt;
     &lt;option value="option2"&gt;Option 2&lt;/option&gt;
@@ -473,9 +540,9 @@
 
 &lt;!-- Select with help text --&gt;
 &lt;div class="select"&gt;
-  &lt;label class="select__label" for="example10"&gt;Select with help text&lt;/label&gt;
-  &lt;span class="message-hint" id="message10"&gt;Help text&lt;/span&gt;
-  &lt;select class="select__control" id="example10" aria-describedby="message10"&gt;
+  &lt;label class="select__label" for="select02"&gt;Select with help text&lt;/label&gt;
+  &lt;span class="message-hint" id="select-message02"&gt;Help text&lt;/span&gt;
+  &lt;select class="select__control" id="select02" aria-describedby="select-message02"&gt;
     &lt;option value=""&gt;Choose an option&lt;/option&gt;
     &lt;option value="option1"&gt;Option 1&lt;/option&gt;
     &lt;option value="option2"&gt;Option 2&lt;/option&gt;
@@ -485,8 +552,8 @@
 
 &lt;!-- Select with required flag --&gt;
 &lt;div class="select"&gt;
-  &lt;label class="select__label" for="example11"&gt;Select with required flag &lt;span class="message-required"&gt;(Required)&lt;/span&gt;&lt;/label&gt;
-  &lt;select class="select__control" id="example11" required&gt;
+  &lt;label class="select__label" for="select03"&gt;Select with required flag &lt;span class="message-required"&gt;(Required)&lt;/span&gt;&lt;/label&gt;
+  &lt;select class="select__control" id="select03" required&gt;
     &lt;option value=""&gt;Choose an option&lt;/option&gt;
     &lt;option value="option1"&gt;Option 1&lt;/option&gt;
     &lt;option value="option2"&gt;Option 2&lt;/option&gt;
@@ -494,16 +561,40 @@
   &lt;/select&gt;
 &lt;/div&gt;
 
-&lt;!-- Select in error state --&gt;
+&lt;!-- Select with error message --&gt;
 &lt;div class="select select-error"&gt;
-  &lt;label class="select__label" for="example12"&gt;Select in error state &lt;span class="message-required"&gt;(Required)&lt;/span&gt;&lt;/label&gt;
-  &lt;select class="select__control" id="example12" required aria-describedby="error12"&gt;
+  &lt;label class="select__label" for="select04"&gt;Select with error message&lt;/label&gt;
+  &lt;select class="select__control" id="select04" required aria-describedby="select-error04"&gt;
     &lt;option value=""&gt;Choose an option&lt;/option&gt;
     &lt;option value="option1"&gt;Option 1&lt;/option&gt;
     &lt;option value="option2"&gt;Option 2&lt;/option&gt;
     &lt;option value="option3"&gt;Option 3&lt;/option&gt;
   &lt;/select&gt;
-  &lt;span class="message-error" id="error12"&gt;Error message&lt;/span&gt;
+  &lt;span class="message-error" id="select-error04"&gt;Error message&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Select with help text and error message --&gt;
+&lt;div class="select select-error"&gt;
+  &lt;label class="select__label" for="select05"&gt;Select with help text and error message&lt;/label&gt;
+  &lt;span class="message-hint" id="select-message05"&gt;Help text&lt;/span&gt;
+  &lt;select class="select__control" id="select05" required aria-describedby="select-message05 select-error05"&gt;
+    &lt;option value=""&gt;Choose an option&lt;/option&gt;
+    &lt;option value="option1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="option2"&gt;Option 2&lt;/option&gt;
+    &lt;option value="option3"&gt;Option 3&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;span class="message-error" id="select-error05"&gt;Error message&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Disabled select --&gt;
+&lt;div class="select select-disabled"&gt;
+  &lt;label class="select__label" for="select01"&gt;Disabled select&lt;/label&gt;
+  &lt;select class="select__control" id="select01" disabled&gt;
+    &lt;option value=""&gt;Choose an option&lt;/option&gt;
+    &lt;option value="option1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="option2"&gt;Option 2&lt;/option&gt;
+    &lt;option value="option3"&gt;Option 3&lt;/option&gt;
+  &lt;/select&gt;
 &lt;/div&gt;
 </code></pre>
       <hr>
@@ -565,13 +656,17 @@
       <p>This element represents an <code>&lt;input&gt;</code> element with a type of <code>checkbox</code> and its explicitly associated <code>&lt;label&gt;</code> element.</p>
       <div class="example">
         <div class="checkbox">
-          <input class="checkbox__control" id="example16" type="checkbox">
-          <label class="checkbox__label" for="example16">Checkbox</label>
+          <input class="checkbox__control" id="checkbox01" type="checkbox">
+          <label class="checkbox__label" for="checkbox01">Checkbox</label>
+        </div>
+        <div class="checkbox checkbox--disabled">
+          <input class="checkbox__control" id="checkbox01" type="checkbox" disabled>
+          <label class="checkbox__label" for="checkbox01">Checkbox</label>
         </div>
       </div>
 <pre><code class="language-markup">&lt;div class="checkbox"&gt;
-  &lt;input class="checkbox__control" id="example16" type="checkbox"&gt;
-  &lt;label class="checkbox__label" for="example16"&gt;Checkbox&lt;/label&gt;
+  &lt;input class="checkbox__control" id="checkbox01" type="checkbox"&gt;
+  &lt;label class="checkbox__label" for="checkbox01"&gt;Checkbox&lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
       <hr>
@@ -609,6 +704,15 @@
   &lt;li&gt;&lt;a href="#wcag"&gt;WCAG references&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a class="menu__external" href="http://code.intopia.digital"&gt;&laquo; Home&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</code></pre>
+      <hr>
+
+      <h3 id="logo">Logo component</h3>
+      <p>The <code>.logo</code> component can be used to style the logo.</p>
+      <div class="example">
+        <h1 class="logo"><a href="http://code.intopia.digital"><img src="assets/img/code-intopia.png" alt="Code Intopia"></a></h1>
+      </div>
+<pre><code class="language-markup">&lt;h1 class="logo"&gt;&lt;a href="http://code.intopia.digital"&gt;&lt;img src="assets/img/code-intopia.png" alt="Code Intopia"&gt;&lt;/a&gt;&lt;/h1&gt;
 </code></pre>
       <hr>
 

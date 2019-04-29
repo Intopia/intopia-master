@@ -874,6 +874,13 @@ dd {
 .select-error .select__control {
   border: 2px solid #b00; }
 
+.input-disabled .input__control,
+.textarea-disabled .textarea__control,
+.select-disabled .select__control {
+  border: 2px solid #999;
+  cursor: not-allowed;
+  background: #d9d9d9; }
+
 .radiogroup {
   border: 0;
   margin: 0 0 1.5rem;
@@ -898,16 +905,60 @@ dd {
   margin: 0 0 0 .1em; }
 
 .checkbox {
-  margin: 0 0 1.5rem; }
+  display: block;
+  clear: left;
+  margin-bottom: 0;
+  padding: 0 1.5rem .7rem 0;
+  cursor: pointer; }
 
-.checkbox__control {
+.checkbox:hover {
+  background: #f2f2f2; }
+
+.checkbox__control::after {
   position: relative;
-  top: -1px;
-  left: 0; }
+  z-index: 1;
+  display: block;
+  width: 1.2em;
+  height: 1.2em;
+  border: 2px solid #737373;
+  border-radius: .2em;
+  content: '';
+  background: #fff; }
+
+.checkbox__control:focus {
+  outline: none; }
+
+.checkbox__control:focus::after {
+  border: 2px solid #000;
+  outline: 0;
+  background: #e5e5e5; }
+
+.checkbox__control:checked::after {
+  border: 2px solid #15828E;
+  background-color: #15828E;
+  background-image: url(../img/icons/icon-tick-white.svg);
+  background-repeat: no-repeat;
+  background-position: center center; }
 
 .checkbox__label {
+  position: relative;
+  top: .4rem;
+  left: .8rem;
   display: inline-block;
-  margin: 0 0 0 .1em; }
+  cursor: pointer; }
+
+.checkbox--disabled {
+  cursor: not-allowed; }
+
+.checkbox--disabled:hover {
+  background: 0; }
+
+.checkbox--disabled .checkbox__control:after {
+  border: 2px solid #999;
+  background: #d9d9d9; }
+
+.checkbox--disabled .checkbox__label {
+  cursor: not-allowed; }
 
 .button-primary,
 .button-secondary {
@@ -938,8 +989,8 @@ dd {
 .button-secondary:focus {
   border: 2px solid #000;
   outline: 0;
-  background: #e5e5e5;
-  color: #000; }
+  color: #000;
+  background: #e5e5e5; }
 
 .button-primary:hover {
   border: 2px solid #0e5962;
@@ -951,7 +1002,7 @@ dd {
 
 .button-primary:active,
 .button-secondary:active {
-  border: 1px solid #b00;
+  border: 2px solid #b00;
   color: #fff;
   background: #b00; }
 
@@ -998,7 +1049,7 @@ dd {
 
 .link-primary:active,
 .link-secondary:active {
-  border: 1px solid #b00;
+  border: 2px solid #b00;
   color: #fff;
   background: #b00; }
 
@@ -1006,8 +1057,14 @@ dd {
   padding: 1rem 0;
   background: #fff; }
 
-.header__logo {
+.logo {
   margin: 0; }
+
+.logo a:focus {
+  background: #e5e5e5; }
+
+.logo a:hover {
+  background: #e5e5e5; }
 
 .banner {
   margin: 0 0 2rem;
@@ -1045,14 +1102,14 @@ dd {
   z-index: 2;
   left: -1000px;
   padding: .5em;
-  color: #fff;
-  background: #000;
+  color: #000;
+  background: #e5e5e5;
   font-weight: bold;
   text-decoration: none; }
 
 .skip-link a:active,
 .skip-link a:focus,
 .skip-link a:hover {
-  top: 0;
-  left: 0;
+  top: 2px;
+  left: 2px;
   display: inline; }

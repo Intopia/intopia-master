@@ -77,7 +77,13 @@
   border: 2px solid $red;
 }
 
-
+.input-disabled .input__control,
+.textarea-disabled .textarea__control,
+.select-disabled .select__control {
+  border: 2px solid $gray40;
+  cursor: not-allowed;
+  background: $gray15;
+}
 
 
 // radiogroup
@@ -114,18 +120,70 @@
 // checkbox
 
 .checkbox {
-  margin: 0 0 1.5rem;
+  display: block;
+  clear: left;
+  margin-bottom: 0;
+  padding: 0 1.5rem .7rem 0;
+  cursor: pointer;
 }
 
-.checkbox__control {
+.checkbox:hover {
+  background: $gray5;
+}
+
+.checkbox__control::after {
   position: relative;
-  top: -1px;
-  left: 0;
+  z-index: 1;
+  display: block;
+  width: 1.2em;
+  height: 1.2em;
+  border: 2px solid $gray55;
+  border-radius: .2em;
+  content: '';
+  background: $white;
+}
+
+.checkbox__control:focus {
+  outline: none;
+}
+
+.checkbox__control:focus::after {
+  border: 2px solid $black;
+  outline: 0;
+  background: $gray10;
+}
+
+.checkbox__control:checked::after {
+  border: 2px solid $link-color;
+  background-color: $link-color;
+  background-image: url(../img/icons/icon-tick-white.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .checkbox__label {
+  position: relative;
+  top: .4rem;
+  left: .8rem;
   display: inline-block;
-  margin: 0 0 0 .1em;
+  cursor: pointer;
+}
+
+.checkbox--disabled {
+  cursor: not-allowed;
+}
+
+.checkbox--disabled:hover {
+  background: 0;
+}
+
+.checkbox--disabled .checkbox__control:after {
+  border: 2px solid $gray40;
+  background: $gray15;
+}
+
+.checkbox--disabled .checkbox__label {
+  cursor: not-allowed;
 }
 
 
@@ -164,8 +222,8 @@
 .button-secondary:focus {
   border: 2px solid $black;
   outline: 0;
-  background: $gray10;
   color: $black;
+  background: $gray10;
 }
 
 .button-primary:hover {
@@ -180,7 +238,7 @@
 
 .button-primary:active,
 .button-secondary:active {
-  border: 1px solid $link-color-active;
+  border: 2px solid $link-color-active;
   color: $white;
   background: $link-color-active;
 }
@@ -238,7 +296,7 @@
 
 .link-primary:active,
 .link-secondary:active {
-  border: 1px solid $link-color-active;
+  border: 2px solid $link-color-active;
   color: $white;
   background: $link-color-active;
 }
@@ -251,8 +309,19 @@
   background: $white;
 }
 
-.header__logo {
+
+// logo
+
+.logo {
   margin: 0;
+}
+
+.logo a:focus {
+  background: $gray10;
+}
+
+.logo a:hover {
+  background: $gray10;
 }
 
 
@@ -314,8 +383,8 @@
   z-index: 2;
   left: -1000px;
   padding: .5em;
-  color: $white;
-  background: $black;
+  color: $black;
+  background: $gray10;
   font-weight: bold;
   text-decoration: none;
 }
@@ -323,7 +392,7 @@
 .skip-link a:active,
 .skip-link a:focus,
 .skip-link a:hover {
-  top: 0;
-  left: 0;
+  top: 2px;
+  left: 2px;
   display: inline;
 }
