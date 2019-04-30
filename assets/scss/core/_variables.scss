@@ -1,0 +1,71 @@
+// base colors
+
+$black:                 #000;
+$white:                 #fff;
+$red:                   #b00;
+$green:                 #008000;
+
+
+// gray variables
+
+$gray5:                 #f2f2f2;
+$gray10:                #e5e5e5;
+$gray15:                #d9d9d9;
+$gray20:                #ccc;
+$gray25:                #bfbfbf;
+$gray30:                #b2b2b2;
+$gray35:                #a6a6a6;
+$gray40:                #999;
+$gray45:                #8c8c8c;
+$gray50:                #808080;
+$gray55:                #737373;
+$gray60:                #666;
+$gray65:                #595959;
+$gray70:                #4d4d4d;
+$gray75:                #404040;
+$gray80:                #333;
+$gray85:                #262626;
+$gray90:                #1a1a1a;
+
+
+// main colors
+
+$primary-color:         #15828E;
+$secondary-color:       #d3420d;
+
+$base-text-color:       $gray90;
+$base-background-color: $white;
+$base-border-color:     $gray50;
+$base-table-color:      $gray20;
+
+$link-color:            $primary-color;
+$link-color-visited:    darken($primary-color, 5%);
+$link-color-focus:      darken($primary-color, 10%);
+$link-color-hover:      darken($primary-color, 10%);
+$link-color-active:     $red;
+
+$disabled-background-color: $gray10;
+$disabled-border-color: $gray30;
+$disabled-color:        $gray55;
+
+
+// base font size
+
+$base-font-size:        1em;
+$base-font-family:      'Lato', helvetica, arial, sans-serif;
+
+
+// font variables
+
+$font36:                $base-font-size * 2.25;
+$font34:                $base-font-size * 2.125;
+$font32:                $base-font-size * 2;
+$font30:                $base-font-size * 1.875;
+$font28:                $base-font-size * 1.75;
+$font26:                $base-font-size * 1.625;
+$font24:                $base-font-size * 1.5;
+$font22:                $base-font-size * 1.375;
+$font20:                $base-font-size * 1.25;
+$font18:                $base-font-size * 1.125;
+$font16:                $base-font-size;
+$font14:                $base-font-size * .875;

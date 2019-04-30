@@ -1,0 +1,76 @@
+// input, textarea, select styles
+
+.input,
+.textarea,
+.select {
+  margin-bottom: 1.5rem;
+}
+
+.input__label,
+.textarea__label,
+.select__label {
+  display: block;
+  margin: 0 0 .2rem;
+}
+
+.input__control,
+.select__control {
+  display: block;
+  width: 100%;
+  height: 2.75rem;
+  border: 2px solid $base-border-color;
+  border-radius: .3rem;
+  padding: 0 .5rem;
+  color: $gray80;
+  background-color: $white;
+  font-size: 1rem;
+  line-height: 2.2rem;
+}
+
+.textarea__control {
+  display: block;
+  width: 100%;
+  height: 6rem;
+  border: 2px solid $base-border-color;
+  border-radius: .3rem;
+  padding: .5rem;
+  color: $gray80;
+  background-color: $white;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.input__control:focus,
+.textarea__control:focus,
+.select__control:focus {
+  border: 2px solid $black !important;
+  outline: 0;
+  background: $gray5;
+}
+
+.input__control:hover,
+.textarea__control:hover,
+.select__control:hover {
+  background: $gray5;
+}
+
+
+// error
+
+.input-error .input__control,
+.textarea-error .textarea__control,
+.select-error .select__control {
+  border: 2px solid $red;
+}
+
+
+// disabled
+
+.input-disabled .input__control,
+.textarea-disabled .textarea__control,
+.select-disabled .select__control {
+  border: 2px solid $disabled-border-color;
+  cursor: not-allowed;
+  color: $disabled-color;
+  background: $disabled-background-color;
+}

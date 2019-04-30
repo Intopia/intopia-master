@@ -1,0 +1,28 @@
+// menu
+
+.menu {
+  border-top: 1px solid $gray15;
+  margin: 0 0 2rem;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline;
+  }
+
+  a {
+    display: block;
+    border-bottom: 1px solid $gray15;
+    padding: .6rem .2rem;
+    text-decoration: none;
+  }
+
+  a:focus,
+  a:hover {
+    background: $gray10;
+  }
+
+  .menu__external {
+    font-weight: bold;
+  }
+}

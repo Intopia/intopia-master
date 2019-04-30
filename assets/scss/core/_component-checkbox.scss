@@ -1,0 +1,83 @@
+// checkbox
+
+.checkbox {
+  display: inline-block;
+  clear: left;
+  margin-bottom: 0;
+  padding: 0 1.5rem .7rem 0;
+  cursor: pointer;
+}
+
+.checkbox:hover {
+  background: $gray5;
+}
+
+.checkbox__control::after {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 1.2em;
+  height: 1.2em;
+  border: 2px solid $gray55;
+  border-radius: .2em;
+  content: '';
+  background: $white;
+}
+
+.checkbox__control:focus {
+  outline: none;
+}
+
+.checkbox__control:focus::after {
+  border: 2px solid $black !important;
+  outline: 0;
+  background: $gray10;
+}
+
+.checkbox__control:checked::after {
+  border: 2px solid lighten($link-color, 5%);
+  background-color: $link-color;
+  background-image: url(../img/icons/icon-tick-white.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.checkbox__label {
+  position: relative;
+  top: .4rem;
+  left: .8rem;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+// disabled
+
+.checkbox--disabled {
+  cursor: not-allowed;
+}
+
+.checkbox--disabled:hover {
+  background: 0;
+}
+
+.checkbox--disabled .checkbox__control:after {
+  cursor: not-allowed;
+  border: 2px solid $disabled-border-color;
+  background: $disabled-background-color;
+}
+
+.checkbox--disabled .checkbox__label {
+  cursor: not-allowed;
+}
+
+
+// error
+
+.checkbox--error .checkbox__control:after {
+  border: 2px solid $red;
+}
+
+.checkbox--error .checkbox__control:checked::after {
+  border: 2px solid $link-color;
+}

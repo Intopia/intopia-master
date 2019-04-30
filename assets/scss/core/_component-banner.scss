@@ -1,0 +1,19 @@
+// banner
+
+.banner {
+  margin: 0 0 2rem;
+  padding: 3rem 0;
+  background: $secondary-color;
+
+  h2 {
+    margin: 0;
+    color: $white;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: $screen-xs-max) and (max-width: $screen-sm-max) {
+  .banner {
+    padding: 2rem 0;
+  }
+}

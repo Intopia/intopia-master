@@ -6,8 +6,7 @@
 
 // variables
 
-@import "core/variables-fonts";
-@import "core/variables-colors";
+@import "core/variables";
 @import "core/utilities";
 
 
@@ -15,4 +14,14 @@
 
 @import "core/grid";
 @import "core/base";
-@import "core/classes";
+@import "core/component-banner";
+@import "core/component-button";
+@import "core/component-checkbox";
+@import "core/component-example";
+@import "core/component-header";
+@import "core/component-input";
+@import "core/component-link-button";
+@import "core/component-logo";
+@import "core/component-menu";
+@import "core/component-radio";
+@import "core/component-skip-link";

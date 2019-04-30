@@ -1,0 +1,55 @@
+// button-primary
+
+.button-primary,
+.button-secondary {
+  height: 2.75rem;
+  border-radius: 2.2rem;
+  padding: 0 1rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2.75rem;
+}
+
+.button-primary {
+  border: 2px solid $link-color;
+  color: $white;
+  background: $link-color;
+}
+
+.button-secondary {
+  border: 2px solid $base-border-color;
+  color: $link-color;
+  background: $white;
+}
+
+.button-primary:focus {
+  border: 2px solid $black;
+  outline: 0;
+  background: $link-color-focus;
+}
+
+.button-secondary:focus {
+  border: 2px solid $black;
+  outline: 0;
+  color: $black;
+  background: $gray10;
+}
+
+.button-primary:hover {
+  border: 2px solid $link-color-hover;
+  color: $white;
+  background: $link-color-hover;
+}
+
+.button-secondary:hover {
+  background: $gray10;
+}
+
+.button-primary:active,
+.button-secondary:active {
+  border: 2px solid $link-color-active;
+  color: $white;
+  background: $link-color-active;
+}

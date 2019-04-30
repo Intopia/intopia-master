@@ -1,0 +1,56 @@
+// link buttons
+
+.link-primary,
+.link-secondary {
+  display: inline-block;
+  height: 2.75rem;
+  border-radius: 2.2rem;
+  padding: 0 1rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2.75rem;
+  text-decoration: none;
+}
+
+.link-primary {
+  border: 2px solid $link-color;
+  color: $white !important;
+  background: $link-color;
+}
+
+.link-secondary {
+  border: 2px solid $base-border-color;
+  color: $link-color;
+  background: $white;
+}
+
+.link-primary:focus {
+  border: 2px solid $black;
+  outline: 0;
+  background: $link-color-focus;
+}
+
+.link-secondary:focus {
+  border: 2px solid $black;
+  outline: 0;
+  background: $gray10;
+}
+
+.link-primary:hover {
+  border: 2px solid $link-color-hover;
+  color: $white;
+  background: $link-color-hover;
+}
+
+.link-secondary:hover {
+  background: $gray10;
+}
+
+.link-primary:active,
+.link-secondary:active {
+  border: 2px solid $link-color-active;
+  color: $white;
+  background: $link-color-active;
+}

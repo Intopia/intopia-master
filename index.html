@@ -36,7 +36,7 @@
     <!-- Navigation -->
     <nav class="aside">
       <ul class="menu">
-        <li><a href="#template">Problem template</a></li>
+        <li><a href="#template">Page template</a></li>
         <li><a href="#headings">Headings</a></li>
         <li><a href="#links">Links</a></li>
         <li><a href="#unordered">Unordered list</a></li>
@@ -70,8 +70,8 @@
       <p>A simple pattern library for all Intopia Code Github repos to make development time quicker, and with a more consistent appearance.</p>
       <hr>
 
-      <h3 id="template">Problem template</h3>
-      <p><a href="problem-template.html">A ready-to-use problem template</a></p>
+      <h3 id="template">Page template</h3>
+      <p><a href="problem-template.html">A ready-to-use page template</a></p>
       <hr>
 
       <h3 id="headings">Headings</h3>
@@ -125,6 +125,8 @@
         quaerat in quae quidem nulla, iste molestiae optio.</p>
       </div>
 <pre><code class="language-markup">&lt;a href="#"&gt;This is a link&lt;/a&gt;
+&lt;a href="#" class="link-primary"&gt;.link-primary&lt;/a&gt;
+&lt;a href="#" class="link-secondary"&gt;.link-secondary&lt;/a&gt;
 </code></pre>
       <hr>
 
@@ -655,18 +657,40 @@
       <h3 id="checkbox">Checkbox</h3>
       <p>This element represents an <code>&lt;input&gt;</code> element with a type of <code>checkbox</code> and its explicitly associated <code>&lt;label&gt;</code> element.</p>
       <div class="example">
+        <!-- Checkbox -->
         <div class="checkbox">
           <input class="checkbox__control" id="checkbox01" type="checkbox">
           <label class="checkbox__label" for="checkbox01">Checkbox</label>
         </div>
+        <br>
+        <!-- Checkbox in error state -->
+        <div class="checkbox checkbox--error">
+          <input class="checkbox__control" id="checkbox02" type="checkbox">
+          <label class="checkbox__label" for="checkbox02">Checkbox in error state</label>
+        </div>
+        <br>
+        <!-- Disabled checkbox -->
         <div class="checkbox checkbox--disabled">
-          <input class="checkbox__control" id="checkbox01" type="checkbox" disabled>
-          <label class="checkbox__label" for="checkbox01">Checkbox</label>
+          <input class="checkbox__control" id="checkbox03" type="checkbox" disabled>
+          <label class="checkbox__label" for="checkbox03">Disabled checkbox</label>
         </div>
       </div>
-<pre><code class="language-markup">&lt;div class="checkbox"&gt;
+<pre><code class="language-markup">&lt;!-- Checkbox --&gt;
+&lt;div class="checkbox"&gt;
   &lt;input class="checkbox__control" id="checkbox01" type="checkbox"&gt;
   &lt;label class="checkbox__label" for="checkbox01"&gt;Checkbox&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Checkbox in error state --&gt;
+&lt;div class="checkbox checkbox--error"&gt;
+  &lt;input class="checkbox__control" id="checkbox02" type="checkbox"&gt;
+  &lt;label class="checkbox__label" for="checkbox02"&gt;Checkbox in error state&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Disabled checkbox --&gt;
+&lt;div class="checkbox checkbox--disabled"&gt;
+  &lt;input class="checkbox__control" id="checkbox03" type="checkbox" disabled&gt;
+  &lt;label class="checkbox__label" for="checkbox03"&gt;Disabled checkbox&lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
       <hr>
