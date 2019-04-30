@@ -35,8 +35,10 @@ $secondary-color:       #d3420d;
 
 $base-text-color:       $gray90;
 $base-background-color: $white;
-$base-border-color:     $gray50;
+$base-border-color:     $gray55;
 $base-table-color:      $gray20;
+$base-hover-color:      $gray5;
+$base-focus-color:      $gray5;
 
 $link-color:            $primary-color;
 $link-color-visited:    darken($primary-color, 5%);

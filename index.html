@@ -604,49 +604,151 @@
       <h3 id="radiogroup">Radiogroup</h3>
       <p>This element represents an <code>&lt;input&gt;</code> element with a type of radio and its explicitly associated <code>&lt;label&gt;</code> element.</p>
       <div class="example">
+        <!-- Radiogroup -->
         <fieldset class="radiogroup">
           <legend class="radiogroup__legend">Radio group</legend>
           <ul class="radiogroup__list">
             <li>
-              <div class="radiogroup_item">
-                <input class="radiogroup__control" id="example13" type="radio" name="radiogroup">
-                <label class="radiogroup__label" for="example13">Item 1</label>
+              <div class="radiogroup__item">
+                <input class="radiogroup__control" id="radiogroup01-01" type="radio" name="radiogroup01">
+                <label class="radiogroup__label" for="radiogroup01-01">Item 1</label>
               </div>
             </li>
             <li>
-              <div class="radiogroup_item">
-                <input class="radiogroup__control" id="example14" type="radio" name="radiogroup">
-                <label class="radiogroup__label" for="example14">Item 2</label>
+              <div class="radiogroup__item">
+                <input class="radiogroup__control" id="radiogroup01-02" type="radio" name="radiogroup01">
+                <label class="radiogroup__label" for="radiogroup01-02">Item 2</label>
               </div>
             </li>
             <li>
-              <div class="radiogroup_item">
-                <input class="radiogroup__control" id="example15" type="radio" name="radiogroup">
-                <label class="radiogroup__label" for="example15">Item 3</label>
+              <div class="radiogroup__item">
+                <input class="radiogroup__control" id="radiogroup01-03" type="radio" name="radiogroup01">
+                <label class="radiogroup__label" for="radiogroup01-03">Item 3</label>
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+
+        <!-- Radiogroup with errors -->
+        <fieldset class="radiogroup radiogroup--error">
+          <legend class="radiogroup__legend">Radiogroup with errors</legend>
+          <ul class="radiogroup__list">
+            <li>
+              <div class="radiogroup__item">
+                <input class="radiogroup__control" id="radiogroup02-01" type="radio" name="radiogroup02">
+                <label class="radiogroup__label" for="radiogroup02-01">Item 1</label>
+              </div>
+            </li>
+            <li>
+              <div class="radiogroup__item">
+                <input class="radiogroup__control" id="radiogroup02-02" type="radio" name="radiogroup02">
+                <label class="radiogroup__label" for="radiogroup02-02">Item 2</label>
+              </div>
+            </li>
+            <li>
+              <div class="radiogroup__item">
+                <input class="radiogroup__control" id="radiogroup02-03" type="radio" name="radiogroup02">
+                <label class="radiogroup__label" for="radiogroup02-03">Item 3</label>
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+
+        <!-- Disabled radiogroup -->
+        <fieldset class="radiogroup radiogroup--disabled">
+          <legend class="radiogroup__legend">Disabled radio group</legend>
+          <ul class="radiogroup__list">
+            <li>
+              <div class="radiogroup__item">
+                <input class="radiogroup__control" id="radiogroup03-01" type="radio" name="radiogroup03" disabled>
+                <label class="radiogroup__label" for="radiogroup03-01">Item 1</label>
+              </div>
+            </li>
+            <li>
+              <div class="radiogroup__item">
+                <input class="radiogroup__control" id="radiogroup03-02" type="radio" name="radiogroup03" disabled>
+                <label class="radiogroup__label" for="radiogroup03-02">Item 2</label>
+              </div>
+            </li>
+            <li>
+              <div class="radiogroup__item">
+                <input class="radiogroup__control" id="radiogroup03-03" type="radio" name="radiogroup03" disabled>
+                <label class="radiogroup__label" for="radiogroup03-03">Item 3</label>
               </div>
             </li>
           </ul>
         </fieldset>
       </div>
-<pre><code class="language-markup">&lt;fieldset class="radiogroup"&gt;
+<pre><code class="language-markup">&lt;!-- Radiogroup --&gt;
+&lt;fieldset class="radiogroup"&gt;
   &lt;legend class="radiogroup__legend"&gt;Radio group&lt;/legend&gt;
   &lt;ul class="radiogroup__list"&gt;
     &lt;li&gt;
-      &lt;div class="radiogroup_item"&gt;
-        &lt;input class="radiogroup__control" id="example13" type="radio" name="radiogroup"&gt;
-        &lt;label class="radiogroup__label" for="example13"&gt;Item 1&lt;/label&gt;
+      &lt;div class="radiogroup__item"&gt;
+        &lt;input class="radiogroup__control" id="radiogroup01-01" type="radio" name="radiogroup01"&gt;
+        &lt;label class="radiogroup__label" for="radiogroup01-01"&gt;Item 1&lt;/label&gt;
       &lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;div class="radiogroup_item"&gt;
-        &lt;input class="radiogroup__control" id="example14" type="radio" name="radiogroup"&gt;
-        &lt;label class="radiogroup__label" for="example14"&gt;Item 2&lt;/label&gt;
+      &lt;div class="radiogroup__item"&gt;
+        &lt;input class="radiogroup__control" id="radiogroup01-02" type="radio" name="radiogroup01"&gt;
+        &lt;label class="radiogroup__label" for="radiogroup01-02"&gt;Item 2&lt;/label&gt;
       &lt;/div&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;div class="radiogroup_item"&gt;
-        &lt;input class="radiogroup__control" id="example15" type="radio" name="radiogroup"&gt;
-        &lt;label class="radiogroup__label" for="example15"&gt;Item 3&lt;/label&gt;
+      &lt;div class="radiogroup__item"&gt;
+        &lt;input class="radiogroup__control" id="radiogroup01-03" type="radio" name="radiogroup01"&gt;
+        &lt;label class="radiogroup__label" for="radiogroup01-03"&gt;Item 3&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/fieldset&gt;
+
+&lt;!-- Radiogroup with errors --&gt;
+&lt;fieldset class="radiogroup radiogroup--error"&gt;
+  &lt;legend class="radiogroup__legend"&gt;Radiogroup with errors&lt;/legend&gt;
+  &lt;ul class="radiogroup__list"&gt;
+    &lt;li&gt;
+      &lt;div class="radiogroup__item"&gt;
+        &lt;input class="radiogroup__control" id="radiogroup02-01" type="radio" name="radiogroup02"&gt;
+        &lt;label class="radiogroup__label" for="radiogroup02-01"&gt;Item 1&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class="radiogroup__item"&gt;
+        &lt;input class="radiogroup__control" id="radiogroup02-02" type="radio" name="radiogroup02"&gt;
+        &lt;label class="radiogroup__label" for="radiogroup02-02"&gt;Item 2&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class="radiogroup__item"&gt;
+        &lt;input class="radiogroup__control" id="radiogroup02-03" type="radio" name="radiogroup02"&gt;
+        &lt;label class="radiogroup__label" for="radiogroup02-03"&gt;Item 3&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/fieldset&gt;
+
+&lt;!-- Disabled radiogroup --&gt;
+&lt;fieldset class="radiogroup radiogroup--disabled"&gt;
+  &lt;legend class="radiogroup__legend"&gt;Disabled radio group&lt;/legend&gt;
+  &lt;ul class="radiogroup__list"&gt;
+    &lt;li&gt;
+      &lt;div class="radiogroup__item"&gt;
+        &lt;input class="radiogroup__control" id="radiogroup03-01" type="radio" name="radiogroup03" disabled&gt;
+        &lt;label class="radiogroup__label" for="radiogroup03-01"&gt;Item 1&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class="radiogroup__item"&gt;
+        &lt;input class="radiogroup__control" id="radiogroup03-02" type="radio" name="radiogroup03" disabled&gt;
+        &lt;label class="radiogroup__label" for="radiogroup03-02"&gt;Item 2&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class="radiogroup__item"&gt;
+        &lt;input class="radiogroup__control" id="radiogroup03-03" type="radio" name="radiogroup03" disabled&gt;
+        &lt;label class="radiogroup__label" for="radiogroup03-03"&gt;Item 3&lt;/label&gt;
       &lt;/div&gt;
     &lt;/li&gt;
   &lt;/ul&gt;

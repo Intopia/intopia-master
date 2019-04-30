@@ -9,7 +9,7 @@
 }
 
 .checkbox:hover {
-  background: $gray5;
+  background: $base-hover-color;
 }
 
 .checkbox__control::after {
@@ -18,7 +18,7 @@
   display: block;
   width: 1.2em;
   height: 1.2em;
-  border: 2px solid $gray55;
+  border: 2px solid $base-border-color;
   border-radius: .2em;
   content: '';
   background: $white;
@@ -31,7 +31,7 @@
 .checkbox__control:focus::after {
   border: 2px solid $black !important;
   outline: 0;
-  background: $gray10;
+  background: $base-focus-color;
 }
 
 .checkbox__control:checked::after {

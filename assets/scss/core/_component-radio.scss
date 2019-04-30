@@ -6,24 +6,106 @@
   padding: 0;
 }
 
-.radiogroup__legend {
-  margin: 0 0 .5rem;
-  font-weight: bold;
+.radiogroup legend {
+  display: block;
+  margin: 0 0 .5rem
 }
 
-.radiogroup__list {
+
+// unordered list
+
+.radiogroup ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.radiogroup__control {
-  position: relative;
-  top: -1px;
-  left: 0;
+.radiogroup li {
+  margin: 0;
+  padding: 0;
 }
 
-.radiogroup__label {
+
+// container
+
+.radiogroup__item {
   display: inline-block;
-  margin: 0 0 0 .1em;
+  clear: left;
+  margin-bottom: 0;
+  padding: .1rem 1rem .5rem 0;
+  cursor: pointer;
+}
+
+.radiogroup__item:hover {
+  background: $base-hover-color;
+}
+
+
+// control
+
+.radiogroup__control::after {
+  position: relative;
+  z-index: 1;
+  top: -.1em;
+  left: -.1em;
+  display: block;
+  width: 1.25em;
+  height: 1.2em;
+  border: 2px solid $base-border-color;
+  border-radius: 1.2em;
+  content: '';
+  background: $white;
+}
+
+.radiogroup__control:focus {
+  outline: none;
+}
+
+.radiogroup__control:focus::after {
+  border: 2px solid $black !important;
+  background: $base-focus-color;
+}
+
+.radiogroup__control:checked::after {
+  border: 2px solid $link-color !important;
+  background-color: $link-color;
+  background-image: url(../img/icons/icon-circle-white.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+// content
+
+.radiogroup__label {
+  position: relative;
+  top: .15rem;
+  display: inline-block;
+  padding: 0 0 0 .5rem;
+  cursor: pointer;
+}
+
+
+// disabled
+
+.radiogroup--disabled .radiogroup__item:hover {
+  background: 0;
+}
+
+.radiogroup--disabled .radiogroup__label {
+  cursor: not-allowed;
+  color: $disabled-color;
+}
+
+.radiogroup--disabled  .radiogroup__control::after {
+  border: 2px solid $disabled-border-color !important;
+  cursor: not-allowed;
+  background: $disabled-background-color;
+}
+
+
+// invalid
+
+.radiogroup--error .radiogroup__control::after {
+  border: 2px solid $red;
 }

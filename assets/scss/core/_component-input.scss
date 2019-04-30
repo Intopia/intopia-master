@@ -45,13 +45,13 @@
 .select__control:focus {
   border: 2px solid $black !important;
   outline: 0;
-  background: $gray5;
+  background: $base-focus-color;
 }
 
 .input__control:hover,
 .textarea__control:hover,
 .select__control:hover {
-  background: $gray5;
+  background: $base-hover-color;
 }
 
 
